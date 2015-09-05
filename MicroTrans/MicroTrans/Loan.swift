@@ -18,14 +18,16 @@ class Loan {
     var borrower:FlipprUser
     var lender:FlipprUser
     var interestCollected:Double
+    var isClosed:Bool
     
-    init(var loanTotal:Double, var amountPayed:Double, var interest:Double, var borrow:FlipprUser, var lend:FlipprUser){
+    init(var loanTotal:Double, var amountPayed:Double, var interest:Double, var borrow:FlipprUser, var lend:FlipprUser, var closed:Bool){
         amountOwed = Double()
         amountPayedBack = amountPayed
         totalAmountOfLoan = loanTotal
         interestRate = interest
         borrower = borrow
         lender = lend
+        isClosed = closed
         interestCollected = Double()
         interestCollected = amountOwed * interestRate
         evaluateAmountOwed()
