@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AECEA0CC1B9AB1C00032696D"
-            BuildableName = "MicroTrans.app"
-            BlueprintName = "MicroTrans"
-            ReferencedContainer = "container:MicroTrans.xcodeproj">
+            BuildableName = "Flippr.app"
+            BlueprintName = "Flippr"
+            ReferencedContainer = "container:Flippr.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AECEA0CC1B9AB1C00032696D"
-            BuildableName = "MicroTrans.app"
-            BlueprintName = "MicroTrans"
-            ReferencedContainer = "container:MicroTrans.xcodeproj">
+            BuildableName = "Flippr.app"
+            BlueprintName = "Flippr"
+            ReferencedContainer = "container:Flippr.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
