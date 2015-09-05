@@ -12,16 +12,16 @@ import UIKit
 class BankAccount {
     
     var institutionName:String
-    var accountNumber:Int
-    var routingNumber:Int
-    var checkImage:UIImage
+    var accountNumber:String
+    var routingNumber:String
+    //var checkImage:UIImage
     
 
     // default constructor
-    init(var name:String, var accNumber:Int, var routingNum:Int, var check:UIImage) {
+    init(var name:String, var accNumber:String, var routingNum:String, var check:UIImage) {
         institutionName = name
         accountNumber = accNumber
         routingNumber = routingNum
-        checkImage = check
+        //checkImage = check
     }
 }

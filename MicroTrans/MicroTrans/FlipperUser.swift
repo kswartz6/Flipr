@@ -23,6 +23,7 @@ class FlipperUser : PFUser {
     var loanRequests:LoanRequest
     var activeLoans:[Loan]
     var closedLoans:[ClosedLoan]
+    var bankInformation:BankAccount
     var SSN:String
     var homeAddres:String
     var phoneNumber:String
@@ -32,7 +33,7 @@ class FlipperUser : PFUser {
 
     init(var userName:String, var password:String, var emailAddres:String,
         var social:String, var address:String, var phone:String, var photo:UIImage, var rep:Reputation,
-        var loanReq:LoanRequest, var activeLoanz:[Loan], var loansClosed:[ClosedLoan], var lender:Bool){
+        var loanReq:LoanRequest, var activeLoanz:[Loan], var loansClosed:[ClosedLoan], var lender:Bool, var bankinfo:BankAccount){
         SSN = String()
         homeAddres = address
         phoneNumber = phone
@@ -41,6 +42,7 @@ class FlipperUser : PFUser {
         loanRequests = loanReq
         activeLoans = activeLoanz
         closedLoans = loansClosed
+        bankInformation = bankinfo
         isLender = lender
         super.init()
     }

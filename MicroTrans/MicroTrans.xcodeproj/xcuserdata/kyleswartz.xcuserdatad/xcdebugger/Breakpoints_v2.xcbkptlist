@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MicroTrans/ClosedLoan.swift"
-            timestampString = "463137413.922439"
+            timestampString = "463171475.79341"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
             landmarkName = "init(dateString:money:)"
             landmarkType = "5">
          </BreakpointContent>
