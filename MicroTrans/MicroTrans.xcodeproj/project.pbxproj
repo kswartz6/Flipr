@@ -24,6 +24,11 @@
 		924448A31B9ABFAF00E16D6A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9244489C1B9ABFAF00E16D6A /* StoreKit.framework */; };
 		924448A41B9ABFAF00E16D6A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9244489D1B9ABFAF00E16D6A /* SystemConfiguration.framework */; };
 		924448A61B9AC17700E16D6A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448A51B9AC17700E16D6A /* DataManager.swift */; };
+		924448AF1B9ADD2B00E16D6A /* Loan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448AE1B9ADD2B00E16D6A /* Loan.swift */; };
+		924448B11B9ADD5100E16D6A /* LoanRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448B01B9ADD5100E16D6A /* LoanRequest.swift */; };
+		924448B31B9ADF7D00E16D6A /* BorrowerReputation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448B21B9ADF7D00E16D6A /* BorrowerReputation.swift */; };
+		924448B51B9AE35E00E16D6A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448B41B9AE35E00E16D6A /* Constants.swift */; };
+		924448B71B9AE8F500E16D6A /* ClosedLoan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448B61B9AE8F500E16D6A /* ClosedLoan.swift */; };
 		AECEA0D31B9AB1C00032696D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEA0D21B9AB1C00032696D /* AppDelegate.swift */; };
 		AECEA0D51B9AB1C00032696D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEA0D41B9AB1C00032696D /* ViewController.swift */; };
 		AECEA0D81B9AB1C00032696D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECEA0D61B9AB1C00032696D /* Main.storyboard */; };
@@ -60,6 +65,11 @@
 		9244489C1B9ABFAF00E16D6A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		9244489D1B9ABFAF00E16D6A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		924448A51B9AC17700E16D6A /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		924448AE1B9ADD2B00E16D6A /* Loan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loan.swift; sourceTree = "<group>"; };
+		924448B01B9ADD5100E16D6A /* LoanRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanRequest.swift; sourceTree = "<group>"; };
+		924448B21B9ADF7D00E16D6A /* BorrowerReputation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorrowerReputation.swift; sourceTree = "<group>"; };
+		924448B41B9AE35E00E16D6A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		924448B61B9AE8F500E16D6A /* ClosedLoan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosedLoan.swift; sourceTree = "<group>"; };
 		AECEA0CD1B9AB1C00032696D /* MicroTrans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroTrans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECEA0D11B9AB1C00032696D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AECEA0D21B9AB1C00032696D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +127,10 @@
 			isa = PBXGroup;
 			children = (
 				924448861B9AB62400E16D6A /* BankAccount.swift */,
+				924448B01B9ADD5100E16D6A /* LoanRequest.swift */,
+				924448AE1B9ADD2B00E16D6A /* Loan.swift */,
+				924448B21B9ADF7D00E16D6A /* BorrowerReputation.swift */,
+				924448B61B9AE8F500E16D6A /* ClosedLoan.swift */,
 			);
 			name = InformationTypes;
 			sourceTree = "<group>";
@@ -162,6 +176,8 @@
 		AECEA0CF1B9AB1C00032696D /* MicroTrans */ = {
 			isa = PBXGroup;
 			children = (
+				924448A51B9AC17700E16D6A /* DataManager.swift */,
+				924448B41B9AE35E00E16D6A /* Constants.swift */,
 				9244487B1B9AB45300E16D6A /* Users */,
 				AECEA0D21B9AB1C00032696D /* AppDelegate.swift */,
 				AECEA0D41B9AB1C00032696D /* ViewController.swift */,
@@ -169,7 +185,6 @@
 				AECEA0D91B9AB1C00032696D /* Images.xcassets */,
 				AECEA0DB1B9AB1C00032696D /* LaunchScreen.xib */,
 				AECEA0D01B9AB1C00032696D /* Supporting Files */,
-				924448A51B9AC17700E16D6A /* DataManager.swift */,
 			);
 			path = MicroTrans;
 			sourceTree = "<group>";
@@ -299,12 +314,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				924448B11B9ADD5100E16D6A /* LoanRequest.swift in Sources */,
+				924448B51B9AE35E00E16D6A /* Constants.swift in Sources */,
 				924448831B9AB4A400E16D6A /* Borrower.swift in Sources */,
+				924448AF1B9ADD2B00E16D6A /* Loan.swift in Sources */,
 				924448871B9AB62400E16D6A /* BankAccount.swift in Sources */,
 				AECEA0D51B9AB1C00032696D /* ViewController.swift in Sources */,
 				924448A61B9AC17700E16D6A /* DataManager.swift in Sources */,
+				924448B71B9AE8F500E16D6A /* ClosedLoan.swift in Sources */,
 				924448811B9AB49B00E16D6A /* Lender.swift in Sources */,
 				AECEA0D31B9AB1C00032696D /* AppDelegate.swift in Sources */,
+				924448B31B9ADF7D00E16D6A /* BorrowerReputation.swift in Sources */,
 				9244487F1B9AB48D00E16D6A /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

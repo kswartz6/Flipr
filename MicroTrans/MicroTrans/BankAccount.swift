@@ -23,6 +23,4 @@ class BankAccount {
         routingNumber = routingNum
         checkImage = check
     }
-    
-    
 }

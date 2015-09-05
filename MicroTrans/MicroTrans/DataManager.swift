@@ -33,5 +33,15 @@ class DataManager {
         
     }
     
+    static func registerNewLoanRequest(){
+        
+    }
+    
+    static func fulfillBorrowRequest() {
+        
+    }
+    
+    
+    
     
 }
