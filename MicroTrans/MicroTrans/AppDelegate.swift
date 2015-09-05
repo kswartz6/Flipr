@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func gotoLogin () {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewControllerWithIdentifier("loginViewController") as! UINavigationController
+        let vc = storyboard.instantiateViewControllerWithIdentifier("loginViewController") as! UIViewController
         
         self.window?.rootViewController = vc
         
