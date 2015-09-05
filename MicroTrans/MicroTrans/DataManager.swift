@@ -13,3 +13,7 @@ import Parse
 // Add attributes
 // Define data types
 // relationships
+
+class DataManager {
+    init(){}
+}
