@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MicroTrans.xcodeproj">
+      location = "self:/Users/kyleswartz/Desktop/PennApps_Flippr/MicroTrans/Flippr.xcodeproj">
    </FileRef>
 </Workspace>
