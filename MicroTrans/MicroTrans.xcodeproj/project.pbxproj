@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83596DE51B9B210A009A7264 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83596DE31B9B210A009A7264 /* Bolts.framework */; };
+		83596DE61B9B210B009A7264 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83596DE41B9B210A009A7264 /* Parse.framework */; };
 		9244487F1B9AB48D00E16D6A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9244487E1B9AB48D00E16D6A /* User.swift */; };
 		924448811B9AB49B00E16D6A /* Lender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448801B9AB49B00E16D6A /* Lender.swift */; };
 		924448831B9AB4A400E16D6A /* Borrower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448821B9AB4A400E16D6A /* Borrower.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		83596DE31B9B210A009A7264 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		83596DE41B9B210A009A7264 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		9244487E1B9AB48D00E16D6A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		924448801B9AB49B00E16D6A /* Lender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lender.swift; sourceTree = "<group>"; };
 		924448821B9AB4A400E16D6A /* Borrower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Borrower.swift; sourceTree = "<group>"; };
@@ -84,8 +88,10 @@
 				924448A21B9ABFAF00E16D6A /* Security.framework in Frameworks */,
 				924448A31B9ABFAF00E16D6A /* StoreKit.framework in Frameworks */,
 				924448A41B9ABFAF00E16D6A /* SystemConfiguration.framework in Frameworks */,
+				83596DE51B9B210A009A7264 /* Bolts.framework in Frameworks */,
 				924448961B9ABF2E00E16D6A /* CoreGraphics.framework in Frameworks */,
 				924448941B9ABF2200E16D6A /* CFNetwork.framework in Frameworks */,
+				83596DE61B9B210B009A7264 /* Parse.framework in Frameworks */,
 				924448921B9ABF1900E16D6A /* AudioToolbox.framework in Frameworks */,
 				9244488E1B9ABE7B00E16D6A /* Parse.framework in Frameworks */,
 				924448901B9ABE9900E16D6A /* Bolts.framework in Frameworks */,
@@ -124,6 +130,8 @@
 		9244488C1B9ABE5500E16D6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				83596DE31B9B210A009A7264 /* Bolts.framework */,
+				83596DE41B9B210A009A7264 /* Parse.framework */,
 				924448971B9ABFAF00E16D6A /* CoreLocation.framework */,
 				924448981B9ABFAF00E16D6A /* libsqlite3.dylib */,
 				924448991B9ABFAF00E16D6A /* libz.dylib */,
@@ -437,6 +445,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/kyleswartz/Downloads/parse-library-1.8.2",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = MicroTrans/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -451,6 +460,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/kyleswartz/Downloads/parse-library-1.8.2",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = MicroTrans/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
