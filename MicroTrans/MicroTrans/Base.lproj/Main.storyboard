@@ -562,7 +562,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="Kio-SP-rTZ">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="243" id="Kio-SP-rTZ">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kio-SP-rTZ" id="ZfM-9g-SFp">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -578,6 +578,24 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WoK-Qa-OtJ">
+                                                    <rect key="frame" x="87" y="83" width="51" height="31"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isLenderSwitch" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Borrower" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1JB-D1-3MK">
+                                                    <rect key="frame" x="8" y="88" width="71" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lender" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULe-F5-aLm">
+                                                    <rect key="frame" x="144" y="88" width="54" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="uYB-QE-g1i" firstAttribute="trailing" secondItem="ZfM-9g-SFp" secondAttribute="trailingMargin" id="89A-lF-Vkw"/>
@@ -599,6 +617,9 @@
                     <navigationItem key="navigationItem" title="Bank Details" id="1qH-cK-geJ">
                         <barButtonItem key="rightBarButtonItem" title="Submit" id="8IN-QP-BnI"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="isLenderSwitch" destination="WoK-Qa-OtJ" id="YDg-Uf-az6"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7m3-Od-MW2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

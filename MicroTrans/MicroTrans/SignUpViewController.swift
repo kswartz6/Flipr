@@ -20,6 +20,8 @@ class SignUpViewController: UITableViewController {
     @IBOutlet weak var confrimPasswordTextField: UITextField!
     @IBOutlet weak var usernameTextField: UITextField!
     
+    @IBOutlet weak var isLenderSwitch: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
