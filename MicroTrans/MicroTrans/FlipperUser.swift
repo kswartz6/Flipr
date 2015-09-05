@@ -19,15 +19,15 @@ class FlipperUser : PFUser {
     * 2) pass
     * 3) email
     */
-    var reputation:Reputation
-    var loanRequests:LoanRequest
-    var activeLoan:Loan
-    var closedLoans:[Int: ClosedLoan]
+    //var reputation:Reputation
+    //var loanRequests:LoanRequest
+   // var activeLoan:Loan
+    //var closedLoans:[Int: ClosedLoan]
     var SSN:Int
     var homeAddres:String
     var phoneNumber:String
     var userImage:UIImage
-    var isLender:Bool
+    //var isLender:Bool
     
 
     init(var userName:String, var password:String, var emailAddres:String,
