@@ -26,7 +26,7 @@
                   moduleName = "MicroTrans"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kyleswartz/Desktop/PennApps_MicroTrans/MicroTrans/MicroTrans/FlipperUser.swift"
-                  timestampString = "463146705.683567"
+                  timestampString = "463146979.002603"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
@@ -41,7 +41,7 @@
                   moduleName = "MicroTrans"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kyleswartz/Desktop/PennApps_MicroTrans/MicroTrans/MicroTrans/FlipperUser.swift"
-                  timestampString = "463146705.68381"
+                  timestampString = "463146979.002916"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
@@ -54,7 +54,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MicroTrans/ClosedLoan.swift"
@@ -63,7 +63,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
             endingLineNumber = "17"
-            landmarkName = "init(dateString:)"
+            landmarkName = "init(dateString:money:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class BankAccount {
+    
     var institutionName:String
     var accountNumber:Int
     var routingNumber:Int

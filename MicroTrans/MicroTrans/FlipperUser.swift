@@ -19,26 +19,49 @@ class FlipperUser : PFUser {
     * 2) pass
     * 3) email
     */
-    //var reputation:Reputation
-    //var loanRequests:LoanRequest
-   // var activeLoan:Loan
-    //var closedLoans:[Int: ClosedLoan]
-    var SSN:Int
+    var reputation:Reputation
+    var loanRequests:LoanRequest
+    var activeLoans:[Loan]
+    var closedLoans:[ClosedLoan]
+    var SSN:String
     var homeAddres:String
     var phoneNumber:String
     var userImage:UIImage
-    //var isLender:Bool
+    var isLender:Bool
     
 
     init(var userName:String, var password:String, var emailAddres:String,
-        var social:Int, var address:String, var phone:String, var photo:UIImage){
-        SSN = Int()
-        homeAddres = String()
-        phoneNumber = String()
-        userImage = UIImage()
+        var social:String, var address:String, var phone:String, var photo:UIImage, var rep:Reputation,
+        var loanReq:LoanRequest, var activeLoanz:[Loan], var loansClosed:[ClosedLoan], var lender:Bool){
+        SSN = String()
+        homeAddres = address
+        phoneNumber = phone
+        userImage = photo
+        reputation = rep
+        loanRequests = loanReq
+        activeLoans = activeLoanz
+        closedLoans = loansClosed
+        isLender = lender
         super.init()
     }
     
+    func canBorrow() -> Bool {
+        return (!isLender && activeLoans.count < 1 )
+    }
     
+    func hasLoanToPayOff() -> Bool {
+        return (!isLender && activeLoans.count >= 1)
+    }
     
+    func makeLoanRequest() {
+        if(canBorrow()) {
+            
+        }
+    }
+    
+    func payOffLoan(var amountToPay:Double) {
+        if(hasLoanToPayOff()) {
+            
+        }
+    }
 }
