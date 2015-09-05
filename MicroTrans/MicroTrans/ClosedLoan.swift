@@ -10,10 +10,14 @@ import Foundation
 
 class ClosedLoan {
     var dateClosed:String
-    var moneyEarned:Double
+    var interestCollected:Double
+    var amountOfLoan:Double
+    
     
     init(var dateString:String, var money:Double) {
         dateClosed = dateString
         moneyEarned = money
     }
+    
+    
 }

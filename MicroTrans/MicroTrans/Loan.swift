@@ -15,17 +15,19 @@ class Loan {
     var amountPayedBack:Double
     var interestRate:Double
     //var digitalSignatureFromBorrower:UIImage
-    var borrower:FlipperUser
-    var lender:FlipperUser
+    var borrower:FlipprUser
+    var lender:FlipprUser
+    var interestCollected:Double
     
-    
-    init(var loanTotal:Double, var amountPayed:Double, var interest:Double, var borrow:FlipperUser, var lend:FlipperUser){
+    init(var loanTotal:Double, var amountPayed:Double, var interest:Double, var borrow:FlipprUser, var lend:FlipprUser){
         amountOwed = Double()
         amountPayedBack = amountPayed
         totalAmountOfLoan = loanTotal
         interestRate = interest
         borrower = borrow
         lender = lend
+        interestCollected = Double()
+        interestCollected = amountOwed * interestRate
         evaluateAmountOwed()
     }
     

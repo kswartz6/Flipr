@@ -24,7 +24,6 @@
 		924448B11B9ADD5100E16D6A /* LoanRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448B01B9ADD5100E16D6A /* LoanRequest.swift */; };
 		924448B31B9ADF7D00E16D6A /* Reputation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448B21B9ADF7D00E16D6A /* Reputation.swift */; };
 		924448B51B9AE35E00E16D6A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448B41B9AE35E00E16D6A /* Constants.swift */; };
-		924448B71B9AE8F500E16D6A /* ClosedLoan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448B61B9AE8F500E16D6A /* ClosedLoan.swift */; };
 		AECEA0D31B9AB1C00032696D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEA0D21B9AB1C00032696D /* AppDelegate.swift */; };
 		AECEA0D51B9AB1C00032696D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEA0D41B9AB1C00032696D /* ViewController.swift */; };
 		AECEA0D81B9AB1C00032696D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECEA0D61B9AB1C00032696D /* Main.storyboard */; };
@@ -67,7 +66,6 @@
 		924448B01B9ADD5100E16D6A /* LoanRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanRequest.swift; sourceTree = "<group>"; };
 		924448B21B9ADF7D00E16D6A /* Reputation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reputation.swift; sourceTree = "<group>"; };
 		924448B41B9AE35E00E16D6A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		924448B61B9AE8F500E16D6A /* ClosedLoan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosedLoan.swift; sourceTree = "<group>"; };
 		AECEA0CD1B9AB1C00032696D /* MicroTrans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroTrans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECEA0D11B9AB1C00032696D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AECEA0D21B9AB1C00032696D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,7 +130,6 @@
 				924448B01B9ADD5100E16D6A /* LoanRequest.swift */,
 				924448AE1B9ADD2B00E16D6A /* Loan.swift */,
 				924448B21B9ADF7D00E16D6A /* Reputation.swift */,
-				924448B61B9AE8F500E16D6A /* ClosedLoan.swift */,
 			);
 			name = InformationTypes;
 			sourceTree = "<group>";
@@ -346,7 +343,6 @@
 				AECEA0FD1B9AFF0C0032696D /* BorrowerViewController.swift in Sources */,
 				AECEA0D51B9AB1C00032696D /* ViewController.swift in Sources */,
 				924448A61B9AC17700E16D6A /* DataManager.swift in Sources */,
-				924448B71B9AE8F500E16D6A /* ClosedLoan.swift in Sources */,
 				AECEA0D31B9AB1C00032696D /* AppDelegate.swift in Sources */,
 				924448B31B9ADF7D00E16D6A /* Reputation.swift in Sources */,
 				9244487F1B9AB48D00E16D6A /* FlipperUser.swift in Sources */,
