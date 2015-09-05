@@ -24,7 +24,6 @@
 		924448B11B9ADD5100E16D6A /* LoanRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448B01B9ADD5100E16D6A /* LoanRequest.swift */; };
 		924448B31B9ADF7D00E16D6A /* Reputation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448B21B9ADF7D00E16D6A /* Reputation.swift */; };
 		924448B51B9AE35E00E16D6A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448B41B9AE35E00E16D6A /* Constants.swift */; };
-		924448B71B9AE8F500E16D6A /* ClosedLoan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448B61B9AE8F500E16D6A /* ClosedLoan.swift */; };
 		AECEA0D31B9AB1C00032696D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEA0D21B9AB1C00032696D /* AppDelegate.swift */; };
 		AECEA0D51B9AB1C00032696D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEA0D41B9AB1C00032696D /* ViewController.swift */; };
 		AECEA0D81B9AB1C00032696D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECEA0D61B9AB1C00032696D /* Main.storyboard */; };
@@ -67,15 +66,14 @@
 		924448B01B9ADD5100E16D6A /* LoanRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanRequest.swift; sourceTree = "<group>"; };
 		924448B21B9ADF7D00E16D6A /* Reputation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reputation.swift; sourceTree = "<group>"; };
 		924448B41B9AE35E00E16D6A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		924448B61B9AE8F500E16D6A /* ClosedLoan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosedLoan.swift; sourceTree = "<group>"; };
-		AECEA0CD1B9AB1C00032696D /* MicroTrans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroTrans.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AECEA0CD1B9AB1C00032696D /* Flippr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flippr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECEA0D11B9AB1C00032696D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AECEA0D21B9AB1C00032696D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AECEA0D41B9AB1C00032696D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AECEA0D71B9AB1C00032696D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AECEA0D91B9AB1C00032696D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AECEA0DC1B9AB1C00032696D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		AECEA0E21B9AB1C00032696D /* MicroTransTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MicroTransTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AECEA0E21B9AB1C00032696D /* FlipprTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlipprTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECEA0E71B9AB1C00032696D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AECEA0E81B9AB1C00032696D /* MicroTransTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroTransTests.swift; sourceTree = "<group>"; };
 		AECEA0F21B9AC4400032696D /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -132,7 +130,6 @@
 				924448B01B9ADD5100E16D6A /* LoanRequest.swift */,
 				924448AE1B9ADD2B00E16D6A /* Loan.swift */,
 				924448B21B9ADF7D00E16D6A /* Reputation.swift */,
-				924448B61B9AE8F500E16D6A /* ClosedLoan.swift */,
 			);
 			name = InformationTypes;
 			sourceTree = "<group>";
@@ -169,8 +166,8 @@
 		AECEA0CE1B9AB1C00032696D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AECEA0CD1B9AB1C00032696D /* MicroTrans.app */,
-				AECEA0E21B9AB1C00032696D /* MicroTransTests.xctest */,
+				AECEA0CD1B9AB1C00032696D /* Flippr.app */,
+				AECEA0E21B9AB1C00032696D /* FlipprTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -239,9 +236,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AECEA0CC1B9AB1C00032696D /* MicroTrans */ = {
+		AECEA0CC1B9AB1C00032696D /* Flippr */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AECEA0EC1B9AB1C00032696D /* Build configuration list for PBXNativeTarget "MicroTrans" */;
+			buildConfigurationList = AECEA0EC1B9AB1C00032696D /* Build configuration list for PBXNativeTarget "Flippr" */;
 			buildPhases = (
 				AECEA0C91B9AB1C00032696D /* Sources */,
 				AECEA0CA1B9AB1C00032696D /* Frameworks */,
@@ -251,14 +248,14 @@
 			);
 			dependencies = (
 			);
-			name = MicroTrans;
+			name = Flippr;
 			productName = MicroTrans;
-			productReference = AECEA0CD1B9AB1C00032696D /* MicroTrans.app */;
+			productReference = AECEA0CD1B9AB1C00032696D /* Flippr.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AECEA0E11B9AB1C00032696D /* MicroTransTests */ = {
+		AECEA0E11B9AB1C00032696D /* FlipprTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AECEA0EF1B9AB1C00032696D /* Build configuration list for PBXNativeTarget "MicroTransTests" */;
+			buildConfigurationList = AECEA0EF1B9AB1C00032696D /* Build configuration list for PBXNativeTarget "FlipprTests" */;
 			buildPhases = (
 				AECEA0DE1B9AB1C00032696D /* Sources */,
 				AECEA0DF1B9AB1C00032696D /* Frameworks */,
@@ -269,9 +266,9 @@
 			dependencies = (
 				AECEA0E41B9AB1C00032696D /* PBXTargetDependency */,
 			);
-			name = MicroTransTests;
+			name = FlipprTests;
 			productName = MicroTransTests;
-			productReference = AECEA0E21B9AB1C00032696D /* MicroTransTests.xctest */;
+			productReference = AECEA0E21B9AB1C00032696D /* FlipprTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -292,7 +289,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AECEA0C81B9AB1C00032696D /* Build configuration list for PBXProject "MicroTrans" */;
+			buildConfigurationList = AECEA0C81B9AB1C00032696D /* Build configuration list for PBXProject "Flippr" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -305,8 +302,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AECEA0CC1B9AB1C00032696D /* MicroTrans */,
-				AECEA0E11B9AB1C00032696D /* MicroTransTests */,
+				AECEA0CC1B9AB1C00032696D /* Flippr */,
+				AECEA0E11B9AB1C00032696D /* FlipprTests */,
 			);
 		};
 /* End PBXProject section */
@@ -346,7 +343,6 @@
 				AECEA0FD1B9AFF0C0032696D /* BorrowerViewController.swift in Sources */,
 				AECEA0D51B9AB1C00032696D /* ViewController.swift in Sources */,
 				924448A61B9AC17700E16D6A /* DataManager.swift in Sources */,
-				924448B71B9AE8F500E16D6A /* ClosedLoan.swift in Sources */,
 				AECEA0D31B9AB1C00032696D /* AppDelegate.swift in Sources */,
 				924448B31B9ADF7D00E16D6A /* Reputation.swift in Sources */,
 				9244487F1B9AB48D00E16D6A /* FlipperUser.swift in Sources */,
@@ -366,7 +362,7 @@
 /* Begin PBXTargetDependency section */
 		AECEA0E41B9AB1C00032696D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AECEA0CC1B9AB1C00032696D /* MicroTrans */;
+			target = AECEA0CC1B9AB1C00032696D /* Flippr */;
 			targetProxy = AECEA0E31B9AB1C00032696D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -485,7 +481,7 @@
 				);
 				INFOPLIST_FILE = MicroTrans/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Flippr;
 			};
 			name = Debug;
 		};
@@ -500,7 +496,7 @@
 				);
 				INFOPLIST_FILE = MicroTrans/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Flippr;
 			};
 			name = Release;
 		};
@@ -518,8 +514,8 @@
 				);
 				INFOPLIST_FILE = MicroTransTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MicroTrans.app/MicroTrans";
+				PRODUCT_NAME = FlipprTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flippr.app/Flippr";
 			};
 			name = Debug;
 		};
@@ -533,15 +529,15 @@
 				);
 				INFOPLIST_FILE = MicroTransTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MicroTrans.app/MicroTrans";
+				PRODUCT_NAME = FlipprTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flippr.app/Flippr";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AECEA0C81B9AB1C00032696D /* Build configuration list for PBXProject "MicroTrans" */ = {
+		AECEA0C81B9AB1C00032696D /* Build configuration list for PBXProject "Flippr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AECEA0EA1B9AB1C00032696D /* Debug */,
@@ -550,7 +546,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AECEA0EC1B9AB1C00032696D /* Build configuration list for PBXNativeTarget "MicroTrans" */ = {
+		AECEA0EC1B9AB1C00032696D /* Build configuration list for PBXNativeTarget "Flippr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AECEA0ED1B9AB1C00032696D /* Debug */,
@@ -559,7 +555,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AECEA0EF1B9AB1C00032696D /* Build configuration list for PBXNativeTarget "MicroTransTests" */ = {
+		AECEA0EF1B9AB1C00032696D /* Build configuration list for PBXNativeTarget "FlipprTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AECEA0F01B9AB1C00032696D /* Debug */,

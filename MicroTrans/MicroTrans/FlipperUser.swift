@@ -10,7 +10,7 @@ import Foundation
 import Parse
 import UIKit
 
-class FlipperUser : PFUser {
+class FlipprUser : PFUser {
     
     /*
     * Variable declarations
@@ -21,8 +21,8 @@ class FlipperUser : PFUser {
     */
     var reputation:Reputation
     var loanRequests:LoanRequest
-    var activeLoans:[Loan]
-    var closedLoans:[ClosedLoan]
+    var loans:[Loan]
+    var bankInformation:BankAccount
     var SSN:String
     var homeAddres:String
     var phoneNumber:String
@@ -32,31 +32,76 @@ class FlipperUser : PFUser {
 
     init(var userName:String, var password:String, var emailAddres:String,
         var social:String, var address:String, var phone:String, var photo:UIImage, var rep:Reputation,
-        var loanReq:LoanRequest, var activeLoanz:[Loan], var loansClosed:[ClosedLoan], var lender:Bool){
+        var loanReq:LoanRequest, var loanz:[Loan], var lender:Bool, var bankinfo:BankAccount){
         SSN = String()
         homeAddres = address
         phoneNumber = phone
         userImage = photo
         reputation = rep
         loanRequests = loanReq
-        activeLoans = activeLoanz
-        closedLoans = loansClosed
+        loans = loanz
+        bankInformation = bankinfo
         isLender = lender
         super.init()
     }
     
     func canBorrow() -> Bool {
-        return (!isLender && activeLoans.count < 1 )
+        if(!isLender) {
+            var i:Int = Int()
+            for Loan in loans {
+                if(!Loan.isClosed) {
+                    ++i
+                }
+            }
+            return (i < 1 )
+        }
+        return false
     }
     
     func hasLoanToPayOff() -> Bool {
-        return (!isLender && activeLoans.count >= 1)
+        if(!isLender) {
+            var i:Int = Int()
+            for Loan in loans {
+                if(!Loan.isClosed){
+                    ++i
+                }
+            }
+            return ( i < 1 )
+        }
+        return false
     }
     
     func makeLoanRequest() {
         if(canBorrow()) {
             
         }
+    }
+    /*
+    This function sums up all of the money the borrower has borrowed over their complete history of using the
+    app
+    */
+    func moneyBorrowedOverTime() -> Double {
+        if(!isLender) {
+            var sum:Double = Double()
+            for Loan in loans {
+                sum += Loan.totalAmountOfLoan
+            }
+            return sum
+        }
+        return Double()
+    }
+    /*
+    This function allows the borrower to see how much interest they have payed over time
+    */
+    func interestPayedOverTime() -> Double {
+        if(!isLender) {
+            var sum:Double = Double()
+            for Loan in loans {
+                sum += Loan.interestCollected
+            }
+            return sum
+        }
+        return Double()
     }
     
     func payOffLoan(var amountToPay:Double) {

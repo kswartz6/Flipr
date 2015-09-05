@@ -7,21 +7,21 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>A79CDCA7-F120-4432-8E1C-FF28FEAE7E82</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>MicroTrans</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>6882DD1B5ECFADDC0FC623D731FD3EB995558958</key>
-		<string>https://github.com/kswartz6/PennApps_MicroTrans.git</string>
+		<string>https://github.com/kswartz6/PennApps_Flippr.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>MicroTrans/MicroTrans.xcodeproj/project.xcworkspace</string>
+	<string>MicroTrans/MicroTrans.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>6882DD1B5ECFADDC0FC623D731FD3EB995558958</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/kswartz6/PennApps_MicroTrans.git</string>
+	<string>https://github.com/kswartz6/PennApps_Flippr.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>6882DD1B5ECFADDC0FC623D731FD3EB995558958</string>
 			<key>IDESourceControlWCCName</key>
-			<string>PennApps_MicroTrans</string>
+			<string>PennApps_Flippr</string>
 		</dict>
 	</array>
 </dict>
