@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AECEA0CC1B9AB1C00032696D"
-               BuildableName = "MicroTrans.app"
-               BlueprintName = "MicroTrans"
-               ReferencedContainer = "container:MicroTrans.xcodeproj">
+               BuildableName = "Flippr.app"
+               BlueprintName = "Flippr"
+               ReferencedContainer = "container:Flippr.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AECEA0E11B9AB1C00032696D"
-               BuildableName = "MicroTransTests.xctest"
-               BlueprintName = "MicroTransTests"
-               ReferencedContainer = "container:MicroTrans.xcodeproj">
+               BuildableName = "FlipprTests.xctest"
+               BlueprintName = "FlipprTests"
+               ReferencedContainer = "container:Flippr.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AECEA0E11B9AB1C00032696D"
-               BuildableName = "MicroTransTests.xctest"
-               BlueprintName = "MicroTransTests"
-               ReferencedContainer = "container:MicroTrans.xcodeproj">
+               BuildableName = "FlipprTests.xctest"
+               BlueprintName = "FlipprTests"
+               ReferencedContainer = "container:Flippr.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AECEA0CC1B9AB1C00032696D"
-            BuildableName = "MicroTrans.app"
-            BlueprintName = "MicroTrans"
-            ReferencedContainer = "container:MicroTrans.xcodeproj">
+            BuildableName = "Flippr.app"
+            BlueprintName = "Flippr"
+            ReferencedContainer = "container:Flippr.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
