@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * Copyright (c) 2015-present, Parse, LLC.
  * All rights reserved.
@@ -12,6 +13,25 @@
 #import <Parse/PFNullability.h>
 #import <Parse/PFObject.h>
 #import <Parse/PFQuery.h>
+=======
+//
+//  PFRelation.h
+//
+//  Copyright 2011-present Parse Inc. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+#if TARGET_OS_IPHONE
+#import <Parse/PFNullability.h>
+#import <Parse/PFObject.h>
+#import <Parse/PFQuery.h>
+#else
+#import <ParseOSX/PFNullability.h>
+#import <ParseOSX/PFObject.h>
+#import <ParseOSX/PFQuery.h>
+#endif
+>>>>>>> master
 
 PF_ASSUME_NONNULL_BEGIN
 
@@ -24,7 +44,11 @@ PF_ASSUME_NONNULL_BEGIN
 /*!
  @abstract The name of the class of the target child objects.
  */
+<<<<<<< HEAD
 @property (PF_NULLABLE_PROPERTY nonatomic, copy) NSString *targetClass;
+=======
+@property (nonatomic, strong) NSString *targetClass;
+>>>>>>> master
 
 ///--------------------------------------
 /// @name Accessing Objects

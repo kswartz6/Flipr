@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * Copyright (c) 2015-present, Parse, LLC.
  * All rights reserved.
@@ -6,17 +7,30 @@
  * LICENSE file in the root directory of this source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  */
+=======
+//
+//  PFPurchase.h
+//
+//  Copyright 2011-present Parse Inc. All rights reserved.
+//
+>>>>>>> master
 
 #import <Foundation/Foundation.h>
 #import <StoreKit/StoreKit.h>
 
 #import <Parse/PFConstants.h>
+<<<<<<< HEAD
 #import <Parse/PFNullability.h>
 
 @class PFProduct;
 
 PF_ASSUME_NONNULL_BEGIN
 
+=======
+
+@class PFProduct;
+
+>>>>>>> master
 /*!
  `PFPurchase` provides a set of APIs for working with in-app purchases.
 
@@ -68,7 +82,11 @@ PF_ASSUME_NONNULL_BEGIN
  */
 + (void)downloadAssetForTransaction:(SKPaymentTransaction *)transaction
                          completion:(void(^)(NSString *filePath, NSError *error))completion
+<<<<<<< HEAD
                            progress:(PF_NULLABLE PFProgressBlock)progress;
+=======
+                           progress:(PFProgressBlock)progress;
+>>>>>>> master
 
 /*!
  @abstract *Asynchronously* restore completed transactions for the current user.
@@ -81,15 +99,25 @@ PF_ASSUME_NONNULL_BEGIN
  */
 + (void)restore;
 
+<<<<<<< HEAD
 /*!
+=======
+/*
+>>>>>>> master
  @abstract Returns a content path of the asset of a product, if it was purchased and downloaded.
 
  @discussion To download and verify purchases use <downloadAssetForTransaction:completion:>.
 
  @warning This method will return `nil`, if the purchase wasn't verified or if the asset was not downloaded.
  */
+<<<<<<< HEAD
 + (PF_NULLABLE NSString *)assetContentPathForProduct:(PFProduct *)product;
 
 @end
 
 PF_ASSUME_NONNULL_END
+=======
++ (NSString *)assetContentPathForProduct:(PFProduct *)product;
+
+@end
+>>>>>>> master

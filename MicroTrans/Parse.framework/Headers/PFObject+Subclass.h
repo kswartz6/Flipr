@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * Copyright (c) 2015-present, Parse, LLC.
  * All rights reserved.
@@ -11,6 +12,23 @@
 
 #import <Parse/PFNullability.h>
 #import <Parse/PFObject.h>
+=======
+//
+//  PFObject+Subclass.h
+//
+//  Copyright 2011-present Parse Inc. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+#if TARGET_OS_IPHONE
+#import <Parse/PFNullability.h>
+#import <Parse/PFObject.h>
+#else
+#import <ParseOSX/PFNullability.h>
+#import <ParseOSX/PFObject.h>
+#endif
+>>>>>>> master
 
 PF_ASSUME_NONNULL_BEGIN
 
@@ -18,7 +36,11 @@ PF_ASSUME_NONNULL_BEGIN
 
 /*!
  ### Subclassing Notes
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> master
  Developers can subclass `PFObject` for a more native object-oriented class structure.
  Strongly-typed subclasses of `PFObject` must conform to the <PFSubclassing> protocol
  and must call <registerSubclass> before <[Parse setApplicationId:clientKey:]> is called.
@@ -28,6 +50,7 @@ PF_ASSUME_NONNULL_BEGIN
  are already implemented in the `PFObject+Subclass` category.
 
  Including `PFObject+Subclass.h` in your implementation file provides these implementations automatically.
+<<<<<<< HEAD
 
  Subclasses support simpler initializers, query syntax, and dynamic synthesizers.
  The following shows an example subclass:
@@ -36,11 +59,25 @@ PF_ASSUME_NONNULL_BEGIN
 
      // Accessing this property is the same as objectForKey:@"title"
      @property (nonatomic, copy) NSString *title;
+=======
+ 
+ Subclasses support simpler initializers, query syntax, and dynamic synthesizers.
+ The following shows an example subclass:
+ 
+     \@interface MYGame : PFObject <PFSubclassing>
+
+     // Accessing this property is the same as objectForKey:@"title"
+     @property (nonatomic, strong) NSString *title;
+>>>>>>> master
 
      + (NSString *)parseClassName;
 
      @end
+<<<<<<< HEAD
 
+=======
+     
+>>>>>>> master
 
      @implementation MYGame
 

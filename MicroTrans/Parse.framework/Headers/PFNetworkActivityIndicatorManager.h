@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * Copyright (c) 2015-present, Parse, LLC.
  * All rights reserved.
@@ -6,6 +7,13 @@
  * LICENSE file in the root directory of this source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  */
+=======
+//
+//  PFNetworkActivityIndicatorManager.h
+//
+//  Copyright 2011-present Parse Inc. All rights reserved.
+//
+>>>>>>> master
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>

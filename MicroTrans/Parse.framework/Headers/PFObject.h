@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * Copyright (c) 2015-present, Parse, LLC.
  * All rights reserved.
@@ -13,10 +14,31 @@
 
 #import <Parse/PFACL.h>
 #import <Parse/PFConstants.h>
+=======
+//
+//  PFObject.h
+//
+//  Copyright 2011-present Parse Inc. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+#if TARGET_OS_IPHONE
+#import <Parse/PFACL.h>
+#import <Parse/PFConstants.h>
+#else
+#import <ParseOSX/PFACL.h>
+#import <ParseOSX/PFConstants.h>
+#endif
+>>>>>>> master
 
 PF_ASSUME_NONNULL_BEGIN
 
 @protocol PFSubclassing;
+<<<<<<< HEAD
+=======
+@class BFTask;
+>>>>>>> master
 @class PFRelation;
 
 /*!
@@ -40,6 +62,13 @@ NS_REQUIRES_PROPERTY_DEFINITIONS
     // Whenever a save completes, the new data is put into fetchedData, and
     // a dictionary is removed from the start.
     NSMutableArray *PF_NULLABLE_S operationSetQueue;
+<<<<<<< HEAD
+=======
+
+    // Our best estimate as to what the current data is, based on
+    // the last fetch from the server, and the set of pending operations.
+    NSMutableDictionary *PF_NULLABLE_S estimatedData;
+>>>>>>> master
 }
 
 ///--------------------------------------
@@ -47,13 +76,20 @@ NS_REQUIRES_PROPERTY_DEFINITIONS
 ///--------------------------------------
 
 /*!
+<<<<<<< HEAD
  @abstract Initializes a new empty `PFObject` instance with a class name.
 
  @param newClassName A class name can be any alphanumeric string that begins with a letter.
+=======
+ @abstract Creates a new PFObject with a class name.
+
+ @param className A class name can be any alphanumeric string that begins with a letter.
+>>>>>>> master
  It represents an object in your app, like a 'User' or a 'Document'.
 
  @returns Returns the object that is instantiated with the given class name.
  */
+<<<<<<< HEAD
 - (instancetype)initWithClassName:(NSString *)newClassName;
 
 /*!
@@ -65,6 +101,23 @@ NS_REQUIRES_PROPERTY_DEFINITIONS
  @returns Returns the object that is instantiated with the given class name.
  */
 + (instancetype)objectWithClassName:(NSString *)className;
+=======
++ (instancetype)objectWithClassName:(NSString *)className;
+
+/*!
+ @abstract Creates a reference to an existing PFObject for use in creating associations between PFObjects.
+
+ @discussion Calling <isDataAvailable> on this object will return `NO` until <fetchIfNeeded> has been called.
+ No network request will be made.
+
+ @param className The object's class.
+ @param objectId The object id for the referenced object.
+
+ @returns A `PFObject` instance without data.
+ */
++ (instancetype)objectWithoutDataWithClassName:(NSString *)className
+                                      objectId:(PF_NULLABLE NSString *)objectId;
+>>>>>>> master
 
 /*!
  @abstract Creates a new `PFObject` with a class name, initialized with data
@@ -75,6 +128,7 @@ NS_REQUIRES_PROPERTY_DEFINITIONS
 
  @returns A PFObject with the given class name and set with the given data.
  */
+<<<<<<< HEAD
 + (instancetype)objectWithClassName:(NSString *)className dictionary:(PF_NULLABLE NSDictionary *)dictionary;
 
 /*!
@@ -89,6 +143,20 @@ NS_REQUIRES_PROPERTY_DEFINITIONS
  @returns A `PFObject` instance without data.
  */
 + (instancetype)objectWithoutDataWithClassName:(NSString *)className objectId:(PF_NULLABLE NSString *)objectId;
+=======
++ (PFObject *)objectWithClassName:(NSString *)className
+                       dictionary:(PF_NULLABLE NSDictionary *)dictionary;
+
+/*!
+ @abstract Initializes a new empty `PFObject` instance with a class name.
+
+ @param newClassName A class name can be any alphanumeric string that begins with a letter.
+ It represents an object in your app, like a 'User' or a 'Document'.
+
+ @returns Returns the object that is instantiated with the given class name.
+ */
+- (instancetype)initWithClassName:(NSString *)newClassName;
+>>>>>>> master
 
 ///--------------------------------------
 /// @name Managing Object Properties
@@ -141,7 +209,11 @@ NS_REQUIRES_PROPERTY_DEFINITIONS
 /*!
  @abstract Sets the object associated with a given key.
 
+<<<<<<< HEAD
  @param object The object for `key`. A strong reference to the object is maintained by PFObject.
+=======
+ @param object The object for `key`. A strong reference to the object is maintaned by PFObject.
+>>>>>>> master
  Raises an `NSInvalidArgumentException` if `object` is `nil`.
  If you need to represent a `nil` value - use `NSNull`.
  @param key The key for `object`.
@@ -176,7 +248,11 @@ NS_REQUIRES_PROPERTY_DEFINITIONS
  @discussion This method enables usage of literal syntax on `PFObject`.
  E.g. `object[@"key"] = @"value";`
 
+<<<<<<< HEAD
  @param object The object for `key`. A strong reference to the object is maintained by PFObject.
+=======
+ @param object The object for `key`. A strong reference to the object is maintaned by PFObject.
+>>>>>>> master
  Raises an `NSInvalidArgumentException` if `object` is `nil`.
  If you need to represent a `nil` value - use `NSNull`.
  @param key The key for `object`.
@@ -202,6 +278,7 @@ NS_REQUIRES_PROPERTY_DEFINITIONS
  */
 - (PFRelation *)relationforKey:(NSString *)key PARSE_DEPRECATED("Please use -relationForKey: instead.");
 
+<<<<<<< HEAD
 /*!
  @abstract Clears any changes to this object made since the last call to save and sets it back to the server state.
  */
@@ -215,6 +292,8 @@ NS_REQUIRES_PROPERTY_DEFINITIONS
  */
 - (void)revertObjectForKey:(NSString *)key;
 
+=======
+>>>>>>> master
 ///--------------------------------------
 /// @name Array Accessors
 ///--------------------------------------

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * Copyright (c) 2015-present, Parse, LLC.
  * All rights reserved.
@@ -15,6 +16,26 @@
 
 PF_ASSUME_NONNULL_BEGIN
 
+=======
+//
+//  PFAnalytics.h
+//
+//  Copyright 2011-present Parse Inc. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+#if TARGET_OS_IPHONE
+#import <Parse/PFConstants.h>
+#else
+#import <ParseOSX/PFConstants.h>
+#endif
+
+PF_ASSUME_NONNULL_BEGIN
+
+@class BFTask;
+
+>>>>>>> master
 /*!
  `PFAnalytics` provides an interface to Parse's logging and analytics backend.
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * Copyright (c) 2015-present, Parse, LLC.
  * All rights reserved.
@@ -10,6 +11,18 @@
 #import <Foundation/Foundation.h>
 
 #import <Parse/PFNullability.h>
+=======
+// PFConstants.h
+// Copyright 2011 Parse, Inc. All rights reserved.
+
+#import <Foundation/Foundation.h>
+
+#if TARGET_OS_IPHONE
+#import <Parse/PFNullability.h>
+#else
+#import <ParseOSX/PFNullability.h>
+#endif
+>>>>>>> master
 
 @class PFObject;
 @class PFUser;
@@ -18,7 +31,11 @@
 /// @name Version
 ///--------------------------------------
 
+<<<<<<< HEAD
 #define PARSE_VERSION @"1.8.2"
+=======
+#define PARSE_VERSION @"1.7.5"
+>>>>>>> master
 
 extern NSInteger const PARSE_API_VERSION;
 
@@ -35,6 +52,12 @@ extern NSString *const PF_NONNULL_S kPFDeviceType;
 #import <UIKit/UIKit.h>
 #else
 #import <Cocoa/Cocoa.h>
+<<<<<<< HEAD
+=======
+@compatibility_alias UIImage NSImage;
+@compatibility_alias UIColor NSColor;
+@compatibility_alias UIView NSView;
+>>>>>>> master
 #endif
 
 ///--------------------------------------

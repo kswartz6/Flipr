@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * Copyright (c) 2015-present, Parse, LLC.
  * All rights reserved.
@@ -11,6 +12,22 @@
 #import <Foundation/Foundation.h>
 
 #import <Parse/PFNullability.h>
+=======
+//
+//  PFGeoPoint.h
+//
+//  Copyright 2011-present Parse Inc. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
+
+#if TARGET_OS_IPHONE
+#import <Parse/PFNullability.h>
+#else
+#import <ParseOSX/PFNullability.h>
+#endif
+>>>>>>> master
 
 PF_ASSUME_NONNULL_BEGIN
 
@@ -35,7 +52,11 @@ typedef void(^PFGeoPointResultBlock)(PFGeoPoint *PF_NULLABLE_S geoPoint, NSError
 
  @returns Returns a new `PFGeoPoint`.
  */
+<<<<<<< HEAD
 + (instancetype)geoPoint;
+=======
++ (PFGeoPoint *)geoPoint;
+>>>>>>> master
 
 /*!
  @abstract Creates a new `PFGeoPoint` object for the given `CLLocation`, set to the location's coordinates.
@@ -44,7 +65,11 @@ typedef void(^PFGeoPointResultBlock)(PFGeoPoint *PF_NULLABLE_S geoPoint, NSError
 
  @returns Returns a new PFGeoPoint at specified location.
  */
+<<<<<<< HEAD
 + (instancetype)geoPointWithLocation:(PF_NULLABLE CLLocation *)location;
+=======
++ (PFGeoPoint *)geoPointWithLocation:(PF_NULLABLE CLLocation *)location;
+>>>>>>> master
 
 /*!
  @abstract Create a new `PFGeoPoint` object with the specified latitude and longitude.
@@ -54,7 +79,11 @@ typedef void(^PFGeoPointResultBlock)(PFGeoPoint *PF_NULLABLE_S geoPoint, NSError
 
  @returns New point object with specified latitude and longitude.
  */
+<<<<<<< HEAD
 + (instancetype)geoPointWithLatitude:(double)latitude longitude:(double)longitude;
+=======
++ (PFGeoPoint *)geoPointWithLatitude:(double)latitude longitude:(double)longitude;
+>>>>>>> master
 
 /*!
  @abstract Fetches the current device location and executes a block with a new `PFGeoPoint` object.

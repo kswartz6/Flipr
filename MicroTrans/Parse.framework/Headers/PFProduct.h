@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * Copyright (c) 2015-present, Parse, LLC.
  * All rights reserved.
@@ -8,6 +9,13 @@
  */
 
 #import <Foundation/Foundation.h>
+=======
+//
+//  PFProduct.h
+//
+//  Copyright 2011-present Parse Inc. All rights reserved.
+//
+>>>>>>> master
 
 #import <Parse/PFFile.h>
 #import <Parse/PFNullability.h>
@@ -43,7 +51,11 @@ PF_ASSUME_NONNULL_BEGIN
 
 /*!
  @abstract The title of the product.
+<<<<<<< HEAD
  */
+=======
+ */ 
+>>>>>>> master
 @property (PF_NULLABLE_PROPERTY nonatomic, strong) NSString *title;
 
 /*!

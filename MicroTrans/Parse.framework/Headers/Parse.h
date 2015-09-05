@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * Copyright (c) 2015-present, Parse, LLC.
  * All rights reserved.
@@ -9,6 +10,18 @@
 
 #import <Foundation/Foundation.h>
 
+=======
+//
+//  Parse.h
+//
+//  Copyright 2011-present Parse Inc. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+#if TARGET_OS_IPHONE
+
+>>>>>>> master
 #import <Parse/PFACL.h>
 #import <Parse/PFAnalytics.h>
 #import <Parse/PFAnonymousUtils.h>
@@ -26,6 +39,7 @@
 #import <Parse/PFSubclassing.h>
 #import <Parse/PFUser.h>
 #import <Parse/PFInstallation.h>
+<<<<<<< HEAD
 #import <Parse/PFNullability.h>
 #import <Parse/PFPush.h>
 
@@ -34,6 +48,36 @@
 #import <Parse/PFNetworkActivityIndicatorManager.h>
 #import <Parse/PFProduct.h>
 #import <Parse/PFPurchase.h>
+=======
+#import <Parse/PFNetworkActivityIndicatorManager.h>
+#import <Parse/PFNullability.h>
+#import <Parse/PFProduct.h>
+#import <Parse/PFPurchase.h>
+#import <Parse/PFPush.h>
+#import <Parse/PFTwitterUtils.h>
+
+#else
+
+#import <ParseOSX/PFACL.h>
+#import <ParseOSX/PFAnalytics.h>
+#import <ParseOSX/PFAnonymousUtils.h>
+#import <ParseOSX/PFCloud.h>
+#import <ParseOSX/PFConfig.h>
+#import <ParseOSX/PFConstants.h>
+#import <ParseOSX/PFFile.h>
+#import <ParseOSX/PFGeoPoint.h>
+#import <ParseOSX/PFInstallation.h>
+#import <ParseOSX/PFNullability.h>
+#import <ParseOSX/PFObject+Subclass.h>
+#import <ParseOSX/PFObject.h>
+#import <ParseOSX/PFPush.h>
+#import <ParseOSX/PFQuery.h>
+#import <ParseOSX/PFRelation.h>
+#import <ParseOSX/PFRole.h>
+#import <ParseOSX/PFSession.h>
+#import <ParseOSX/PFSubclassing.h>
+#import <ParseOSX/PFUser.h>
+>>>>>>> master
 
 #endif
 

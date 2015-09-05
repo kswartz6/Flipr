@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * Copyright (c) 2015-present, Parse, LLC.
  * All rights reserved.
@@ -10,6 +11,21 @@
 #import <Foundation/Foundation.h>
 
 #import <Parse/PFNullability.h>
+=======
+//
+//  PFACL.h
+//
+//  Copyright 2011-present Parse Inc. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+#if TARGET_OS_IPHONE
+#import <Parse/PFNullability.h>
+#else
+#import <ParseOSX/PFNullability.h>
+#endif
+>>>>>>> master
 
 PF_ASSUME_NONNULL_BEGIN
 
@@ -33,14 +49,22 @@ PF_ASSUME_NONNULL_BEGIN
 
  @returns Returns a new `PFACL`.
  */
+<<<<<<< HEAD
 + (instancetype)ACL;
+=======
++ (PFACL *)ACL;
+>>>>>>> master
 
 /*!
  @abstract Creates an ACL where only the provided user has access.
 
  @param user The user to assign access.
  */
+<<<<<<< HEAD
 + (instancetype)ACLWithUser:(PFUser *)user;
+=======
++ (PFACL *)ACLWithUser:(PFUser *)user;
+>>>>>>> master
 
 ///--------------------------------------
 /// @name Controlling Public Access

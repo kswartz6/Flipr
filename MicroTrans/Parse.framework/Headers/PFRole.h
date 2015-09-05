@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * Copyright (c) 2015-present, Parse, LLC.
  * All rights reserved.
@@ -12,6 +13,25 @@
 #import <Parse/PFNullability.h>
 #import <Parse/PFObject.h>
 #import <Parse/PFSubclassing.h>
+=======
+//
+//  PFRole.h
+//
+//  Copyright 2011-present Parse Inc. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+#if TARGET_OS_IPHONE
+#import <Parse/PFNullability.h>
+#import <Parse/PFObject.h>
+#import <Parse/PFSubclassing.h>
+#else
+#import <ParseOSX/PFNullability.h>
+#import <ParseOSX/PFObject.h>
+#import <ParseOSX/PFSubclassing.h>
+#endif
+>>>>>>> master
 
 PF_ASSUME_NONNULL_BEGIN
 
@@ -24,7 +44,11 @@ PF_ASSUME_NONNULL_BEGIN
 
  Roles must have a name (which cannot be changed after creation of the role), and must specify an ACL.
  */
+<<<<<<< HEAD
 @interface PFRole : PFObject <PFSubclassing>
+=======
+@interface PFRole : PFObject<PFSubclassing>
+>>>>>>> master
 
 ///--------------------------------------
 /// @name Creating a New Role

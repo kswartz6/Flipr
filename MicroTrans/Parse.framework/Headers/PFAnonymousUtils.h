@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * Copyright (c) 2015-present, Parse, LLC.
  * All rights reserved.
@@ -13,6 +14,23 @@
 
 #import <Parse/PFConstants.h>
 #import <Parse/PFUser.h>
+=======
+//
+//  PFAnonymousUtils.h
+//
+//  Copyright 2011-present Parse Inc. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+#if TARGET_OS_IPHONE
+#import <Parse/PFConstants.h>
+#import <Parse/PFUser.h>
+#else
+#import <ParseOSX/PFConstants.h>
+#import <ParseOSX/PFUser.h>
+#endif
+>>>>>>> master
 
 PF_ASSUME_NONNULL_BEGIN
 

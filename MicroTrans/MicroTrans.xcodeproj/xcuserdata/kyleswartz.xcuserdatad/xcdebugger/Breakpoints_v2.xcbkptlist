@@ -9,14 +9,78 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MicroTrans/User.swift"
+            filePath = "MicroTrans/FlipperUser.swift"
             timestampString = "463126702.686631"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "12"
             endingLineNumber = "12"
-            landmarkName = "User"
+            landmarkName = "FlipprUser"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MicroTrans.FlipperUser.init (MicroTrans.FlipperUser.Type)(className : Swift.String) -&gt; MicroTrans.FlipperUser"
+                  moduleName = "MicroTrans"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleswartz/Desktop/PennApps_MicroTrans/MicroTrans/MicroTrans/FlipperUser.swift"
+                  timestampString = "463146979.002603"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MicroTrans.FlipperUser.init (MicroTrans.FlipperUser.Type)() -&gt; MicroTrans.FlipperUser"
+                  moduleName = "MicroTrans"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kyleswartz/Desktop/PennApps_MicroTrans/MicroTrans/MicroTrans/FlipperUser.swift"
+                  timestampString = "463146979.002916"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MicroTrans/ClosedLoan.swift"
+            timestampString = "463171475.79341"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "init(dateString:money:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MicroTrans/Loan.swift"
+            timestampString = "463174017.218399"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "init(loanTotal:amountPayed:interest:borrow:lend:closed:)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

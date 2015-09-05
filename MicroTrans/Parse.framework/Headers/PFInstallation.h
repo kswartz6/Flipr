@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * Copyright (c) 2015-present, Parse, LLC.
  * All rights reserved.
@@ -12,6 +13,25 @@
 #import <Parse/PFNullability.h>
 #import <Parse/PFObject.h>
 #import <Parse/PFSubclassing.h>
+=======
+//
+//  PFInstallation.h
+//
+//  Copyright 2011-present Parse Inc. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+#if TARGET_OS_IPHONE
+#import <Parse/PFNullability.h>
+#import <Parse/PFObject.h>
+#import <Parse/PFSubclassing.h>
+#else
+#import <ParseOSX/PFNullability.h>
+#import <ParseOSX/PFObject.h>
+#import <ParseOSX/PFSubclassing.h>
+#endif
+>>>>>>> master
 
 PF_ASSUME_NONNULL_BEGIN
 
@@ -57,17 +77,29 @@ PF_ASSUME_NONNULL_BEGIN
 /*!
  @abstract The device type for the `PFInstallation`.
  */
+<<<<<<< HEAD
 @property (nonatomic, copy, readonly) NSString *deviceType;
+=======
+@property (nonatomic, strong, readonly) NSString *deviceType;
+>>>>>>> master
 
 /*!
  @abstract The installationId for the `PFInstallation`.
  */
+<<<<<<< HEAD
 @property (nonatomic, copy, readonly) NSString *installationId;
+=======
+@property (nonatomic, strong, readonly) NSString *installationId;
+>>>>>>> master
 
 /*!
  @abstract The device token for the `PFInstallation`.
  */
+<<<<<<< HEAD
 @property (PF_NULLABLE_PROPERTY nonatomic, copy) NSString *deviceToken;
+=======
+@property (PF_NULLABLE_PROPERTY nonatomic, strong) NSString *deviceToken;
+>>>>>>> master
 
 /*!
  @abstract The badge for the `PFInstallation`.
@@ -77,12 +109,20 @@ PF_ASSUME_NONNULL_BEGIN
 /*!
  @abstract The name of the time zone for the `PFInstallation`.
  */
+<<<<<<< HEAD
 @property (PF_NULLABLE_PROPERTY nonatomic, copy, readonly) NSString *timeZone;
+=======
+@property (PF_NULLABLE_PROPERTY nonatomic, strong, readonly) NSString *timeZone;
+>>>>>>> master
 
 /*!
  @abstract The channels for the `PFInstallation`.
  */
+<<<<<<< HEAD
 @property (PF_NULLABLE_PROPERTY nonatomic, copy) NSArray *channels;
+=======
+@property (PF_NULLABLE_PROPERTY nonatomic, strong) NSArray *channels;
+>>>>>>> master
 
 /*!
  @abstract Sets the device token string property from an `NSData`-encoded token.

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * Copyright (c) 2015-present, Parse, LLC.
  * All rights reserved.
@@ -15,6 +16,25 @@
 
 PF_ASSUME_NONNULL_BEGIN
 
+=======
+//
+//  PFConfig.h
+//
+//  Copyright 2011-present Parse Inc. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+#if TARGET_OS_IPHONE
+#import <Parse/PFNullability.h>
+#else
+#import <ParseOSX/PFNullability.h>
+#endif
+
+PF_ASSUME_NONNULL_BEGIN
+
+@class BFTask;
+>>>>>>> master
 @class PFConfig;
 
 typedef void(^PFConfigResultBlock)(PFConfig *PF_NULLABLE_S config, NSError *PF_NULLABLE_S error);
