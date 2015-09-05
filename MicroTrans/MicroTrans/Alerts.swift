@@ -20,4 +20,9 @@ class Alert {
 //        
 //        presentViewController(alertController, animated: true, completion: nil)
     }
+    
+    static  func userNameTaken()
+    {
+        println("Username Taken")    
+    }
 }
