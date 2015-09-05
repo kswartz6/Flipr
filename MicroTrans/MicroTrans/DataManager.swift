@@ -16,7 +16,8 @@ import Parse
 
 class DataManager: NSObject {
     
-    static func registerNewUser(var newUser:User) {
+    static func registerNewUser(var newUser:FlipperUser) {
+        
 //        if (newUser is Lender){
 //
 //        }
