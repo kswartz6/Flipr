@@ -10,7 +10,14 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
+    
+    @IBOutlet weak var firstNameTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var phoneNumberTextField: UITextField!
+    @IBOutlet weak var emailAddressTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,6 +35,11 @@ class SignUpViewController: UIViewController {
 //        scrollView.contentSize = 
     }
     
+    @IBAction func nextBtnAction(sender: AnyObject) {
+        
+        
+        
+    }
 
     /*
     // MARK: - Navigation

@@ -28,7 +28,7 @@ class User : PFUser {
 
     init(var userName:String, var password:String, var emailAddres:String,
         var social:Int, var address:String, var phone:String, var photo:UIImage){
-        SSN = Int();
+        SSN = Int()
         homeAddres = String()
         phoneNumber = String()
         userImage = UIImage()

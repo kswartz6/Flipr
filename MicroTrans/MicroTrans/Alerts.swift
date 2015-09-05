@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+class Alert {
+    
+    static func loginFailed()
+    {
+        println("Login Failed")
+//        let alertController = UIAlertController(title: "Hey AppCoda", message: "What do you want to do?", preferredStyle: .Alert)
+//        
+//        let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+//        alertController.addAction(defaultAction)
+//        
+//        presentViewController(alertController, animated: true, completion: nil)
+    }
+}

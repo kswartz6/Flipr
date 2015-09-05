@@ -9,20 +9,19 @@
 import Foundation
 import Parse
 
-// Create a parse class in parse site 
+// Create a parse class in parse site
 // Add attributes
 // Define data types
 // relationships
 
-class DataManager {
-    init(){}
+class DataManager: NSObject {
     
     static func registerNewUser(var newUser:User) {
 //        if (newUser is Lender){
-//            
+//
 //        }
 //        else if(newUser is Borrower) {
-//            
+//
 //        }
 //        else {
 //            // Not good

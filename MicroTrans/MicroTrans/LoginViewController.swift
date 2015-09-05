@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import Parse
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var userNameTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +26,25 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func loginBtnAction(sender: AnyObject) {
+        
+        PFUser.logInWithUsernameInBackground(userNameTextField.text, password: passwordTextField.text) { (user: PFUser?, error: NSError?) -> Void in
+            if error != nil{
+                // TODO: Add an alert that you are not logged in
+                println("User not logged in")
+                println(error?.userInfo)
+                Alert.loginFailed()
+                return
+            }
+            
+            if let user = user
+            {
+                println("\(user.description)")
+                NSNotificationCenter.defaultCenter().postNotificationName("gotoMain", object: nil)
+            }
+            
+        }
+    }
 
     /*
     // MARK: - Navigation

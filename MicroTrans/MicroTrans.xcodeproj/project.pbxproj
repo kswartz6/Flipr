@@ -11,8 +11,6 @@
 		924448811B9AB49B00E16D6A /* Lender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448801B9AB49B00E16D6A /* Lender.swift */; };
 		924448831B9AB4A400E16D6A /* Borrower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448821B9AB4A400E16D6A /* Borrower.swift */; };
 		924448871B9AB62400E16D6A /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448861B9AB62400E16D6A /* BankAccount.swift */; };
-		9244488E1B9ABE7B00E16D6A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9244488D1B9ABE7B00E16D6A /* Parse.framework */; };
-		924448901B9ABE9900E16D6A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9244488F1B9ABE9900E16D6A /* Bolts.framework */; };
 		924448921B9ABF1900E16D6A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924448911B9ABF1900E16D6A /* AudioToolbox.framework */; };
 		924448941B9ABF2200E16D6A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924448931B9ABF2200E16D6A /* CFNetwork.framework */; };
 		924448961B9ABF2E00E16D6A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924448951B9ABF2E00E16D6A /* CoreGraphics.framework */; };
@@ -36,6 +34,11 @@
 		AECEA0DD1B9AB1C00032696D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AECEA0DB1B9AB1C00032696D /* LaunchScreen.xib */; };
 		AECEA0E91B9AB1C00032696D /* MicroTransTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEA0E81B9AB1C00032696D /* MicroTransTests.swift */; };
 		AECEA0F31B9AC4400032696D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEA0F21B9AC4400032696D /* SignUpViewController.swift */; };
+		AECEA0F61B9AF3070032696D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECEA0F41B9AF3070032696D /* Bolts.framework */; };
+		AECEA0F71B9AF3070032696D /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECEA0F51B9AF3070032696D /* Parse.framework */; };
+		AECEA0FA1B9AFB4E0032696D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEA0F91B9AFB4E0032696D /* LoginViewController.swift */; };
+		AECEA0FD1B9AFF0C0032696D /* BorrowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEA0FC1B9AFF0C0032696D /* BorrowerViewController.swift */; };
+		AECEA1041B9B061E0032696D /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEA1031B9B061E0032696D /* Alerts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +56,6 @@
 		924448801B9AB49B00E16D6A /* Lender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lender.swift; sourceTree = "<group>"; };
 		924448821B9AB4A400E16D6A /* Borrower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Borrower.swift; sourceTree = "<group>"; };
 		924448861B9AB62400E16D6A /* BankAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
-		9244488D1B9ABE7B00E16D6A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../Downloads/parse-library-1.8.2/Parse.framework"; sourceTree = "<group>"; };
-		9244488F1B9ABE9900E16D6A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Downloads/parse-library-1.8.2/Bolts.framework"; sourceTree = "<group>"; };
 		924448911B9ABF1900E16D6A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		924448931B9ABF2200E16D6A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		924448951B9ABF2E00E16D6A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,6 +83,11 @@
 		AECEA0E71B9AB1C00032696D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AECEA0E81B9AB1C00032696D /* MicroTransTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroTransTests.swift; sourceTree = "<group>"; };
 		AECEA0F21B9AC4400032696D /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		AECEA0F41B9AF3070032696D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		AECEA0F51B9AF3070032696D /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		AECEA0F91B9AFB4E0032696D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AECEA0FC1B9AFF0C0032696D /* BorrowerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorrowerViewController.swift; sourceTree = "<group>"; };
+		AECEA1031B9B061E0032696D /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +103,10 @@
 				924448A31B9ABFAF00E16D6A /* StoreKit.framework in Frameworks */,
 				924448A41B9ABFAF00E16D6A /* SystemConfiguration.framework in Frameworks */,
 				924448961B9ABF2E00E16D6A /* CoreGraphics.framework in Frameworks */,
+				AECEA0F61B9AF3070032696D /* Bolts.framework in Frameworks */,
 				924448941B9ABF2200E16D6A /* CFNetwork.framework in Frameworks */,
+				AECEA0F71B9AF3070032696D /* Parse.framework in Frameworks */,
 				924448921B9ABF1900E16D6A /* AudioToolbox.framework in Frameworks */,
-				9244488E1B9ABE7B00E16D6A /* Parse.framework in Frameworks */,
-				924448901B9ABE9900E16D6A /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +146,8 @@
 		9244488C1B9ABE5500E16D6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AECEA0F41B9AF3070032696D /* Bolts.framework */,
+				AECEA0F51B9AF3070032696D /* Parse.framework */,
 				924448971B9ABFAF00E16D6A /* CoreLocation.framework */,
 				924448981B9ABFAF00E16D6A /* libsqlite3.dylib */,
 				924448991B9ABFAF00E16D6A /* libz.dylib */,
@@ -150,8 +158,6 @@
 				924448951B9ABF2E00E16D6A /* CoreGraphics.framework */,
 				924448931B9ABF2200E16D6A /* CFNetwork.framework */,
 				924448911B9ABF1900E16D6A /* AudioToolbox.framework */,
-				9244488F1B9ABE9900E16D6A /* Bolts.framework */,
-				9244488D1B9ABE7B00E16D6A /* Parse.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -182,9 +188,9 @@
 				924448B41B9AE35E00E16D6A /* Constants.swift */,
 				9244487B1B9AB45300E16D6A /* Users */,
 				AECEA0D21B9AB1C00032696D /* AppDelegate.swift */,
-				AECEA0D41B9AB1C00032696D /* ViewController.swift */,
 				AECEA0D61B9AB1C00032696D /* Main.storyboard */,
-				AECEA0F21B9AC4400032696D /* SignUpViewController.swift */,
+				AECEA1001B9AFFA40032696D /* Alerts */,
+				AECEA0FB1B9AFB570032696D /* ViewControllers */,
 				AECEA0D91B9AB1C00032696D /* Images.xcassets */,
 				AECEA0DB1B9AB1C00032696D /* LaunchScreen.xib */,
 				AECEA0D01B9AB1C00032696D /* Supporting Files */,
@@ -215,6 +221,25 @@
 				AECEA0E71B9AB1C00032696D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AECEA0FB1B9AFB570032696D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AECEA0FC1B9AFF0C0032696D /* BorrowerViewController.swift */,
+				AECEA0F91B9AFB4E0032696D /* LoginViewController.swift */,
+				AECEA0F21B9AC4400032696D /* SignUpViewController.swift */,
+				AECEA0D41B9AB1C00032696D /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AECEA1001B9AFFA40032696D /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				AECEA1031B9B061E0032696D /* Alerts.swift */,
+			);
+			name = Alerts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,12 +342,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AECEA0FA1B9AFB4E0032696D /* LoginViewController.swift in Sources */,
 				AECEA0F31B9AC4400032696D /* SignUpViewController.swift in Sources */,
+				AECEA1041B9B061E0032696D /* Alerts.swift in Sources */,
 				924448B11B9ADD5100E16D6A /* LoanRequest.swift in Sources */,
 				924448B51B9AE35E00E16D6A /* Constants.swift in Sources */,
 				924448831B9AB4A400E16D6A /* Borrower.swift in Sources */,
 				924448AF1B9ADD2B00E16D6A /* Loan.swift in Sources */,
 				924448871B9AB62400E16D6A /* BankAccount.swift in Sources */,
+				AECEA0FD1B9AFF0C0032696D /* BorrowerViewController.swift in Sources */,
 				AECEA0D51B9AB1C00032696D /* ViewController.swift in Sources */,
 				924448A61B9AC17700E16D6A /* DataManager.swift in Sources */,
 				924448B71B9AE8F500E16D6A /* ClosedLoan.swift in Sources */,
@@ -461,6 +489,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/kyleswartz/Downloads/parse-library-1.8.2",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = MicroTrans/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -475,6 +504,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/kyleswartz/Downloads/parse-library-1.8.2",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = MicroTrans/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

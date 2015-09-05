@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../MicroTrans/ViewController.swift">
+   </FileRef>
+   <FileRef
       location = "self:MicroTrans.xcodeproj">
    </FileRef>
 </Workspace>
