@@ -9,7 +9,6 @@
 import Foundation
 
 class LoanRequest {
-    
     var cashRequested:Double
     var interestRate:Double
     var borrowerInformation:FlipprUser

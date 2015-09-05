@@ -80,29 +80,29 @@ class FlipprUser : PFUser {
     This function sums up all of the money the borrower has borrowed over their complete history of using the
     app
     */
-//    func moneyBorrowedOverTime() -> Double {
-//        if(!isLender) {
-//            var sum:Double = Double()
-//            for ClosedLoan in closedLoans {
-//                sum += ClosedLoan.amountOfLoan
-//            }
-//            return sum
-//        }
-//        return Double()
-//    }
+    func moneyBorrowedOverTime() -> Double {
+        if(!isLender) {
+            var sum:Double = Double()
+            for Loan in loans {
+                sum += Loan.totalAmountOfLoan
+            }
+            return sum
+        }
+        return Double()
+    }
     /*
     This function allows the borrower to see how much interest they have payed over time
     */
-//    func interestPayedOverTime() -> Double {
-//        if(!isLender) {
-//            var sum:Double = Double()
-//            for ClosedLoan in closedLoans {
-//                sum += ClosedLoan.interestCollected
-//            }
-//            return sum
-//        }
-//        return Double()
-//    }
+    func interestPayedOverTime() -> Double {
+        if(!isLender) {
+            var sum:Double = Double()
+            for Loan in loans {
+                sum += Loan.interestCollected
+            }
+            return sum
+        }
+        return Double()
+    }
     
     func payOffLoan(var amountToPay:Double) {
         if(hasLoanToPayOff()) {
