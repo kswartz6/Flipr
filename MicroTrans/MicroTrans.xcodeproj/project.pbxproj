@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9244487F1B9AB48D00E16D6A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9244487E1B9AB48D00E16D6A /* User.swift */; };
+		924448811B9AB49B00E16D6A /* Lender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448801B9AB49B00E16D6A /* Lender.swift */; };
+		924448831B9AB4A400E16D6A /* Borrower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448821B9AB4A400E16D6A /* Borrower.swift */; };
+		924448871B9AB62400E16D6A /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448861B9AB62400E16D6A /* BankAccount.swift */; };
+		9244488E1B9ABE7B00E16D6A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9244488D1B9ABE7B00E16D6A /* Parse.framework */; };
+		924448901B9ABE9900E16D6A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9244488F1B9ABE9900E16D6A /* Bolts.framework */; };
+		924448921B9ABF1900E16D6A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924448911B9ABF1900E16D6A /* AudioToolbox.framework */; };
+		924448941B9ABF2200E16D6A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924448931B9ABF2200E16D6A /* CFNetwork.framework */; };
+		924448961B9ABF2E00E16D6A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924448951B9ABF2E00E16D6A /* CoreGraphics.framework */; };
+		9244489E1B9ABFAF00E16D6A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924448971B9ABFAF00E16D6A /* CoreLocation.framework */; };
+		9244489F1B9ABFAF00E16D6A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 924448981B9ABFAF00E16D6A /* libsqlite3.dylib */; };
+		924448A01B9ABFAF00E16D6A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 924448991B9ABFAF00E16D6A /* libz.dylib */; };
+		924448A11B9ABFAF00E16D6A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9244489A1B9ABFAF00E16D6A /* QuartzCore.framework */; };
+		924448A21B9ABFAF00E16D6A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9244489B1B9ABFAF00E16D6A /* Security.framework */; };
+		924448A31B9ABFAF00E16D6A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9244489C1B9ABFAF00E16D6A /* StoreKit.framework */; };
+		924448A41B9ABFAF00E16D6A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9244489D1B9ABFAF00E16D6A /* SystemConfiguration.framework */; };
+		924448A61B9AC17700E16D6A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448A51B9AC17700E16D6A /* DataManager.swift */; };
+		924448AF1B9ADD2B00E16D6A /* Loan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448AE1B9ADD2B00E16D6A /* Loan.swift */; };
+		924448B11B9ADD5100E16D6A /* LoanRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448B01B9ADD5100E16D6A /* LoanRequest.swift */; };
+		924448B31B9ADF7D00E16D6A /* BorrowerReputation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448B21B9ADF7D00E16D6A /* BorrowerReputation.swift */; };
+		924448B51B9AE35E00E16D6A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448B41B9AE35E00E16D6A /* Constants.swift */; };
+		924448B71B9AE8F500E16D6A /* ClosedLoan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448B61B9AE8F500E16D6A /* ClosedLoan.swift */; };
 		AECEA0D31B9AB1C00032696D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEA0D21B9AB1C00032696D /* AppDelegate.swift */; };
 		AECEA0D51B9AB1C00032696D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEA0D41B9AB1C00032696D /* ViewController.swift */; };
 		AECEA0D81B9AB1C00032696D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECEA0D61B9AB1C00032696D /* Main.storyboard */; };
@@ -27,6 +49,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9244487E1B9AB48D00E16D6A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		924448801B9AB49B00E16D6A /* Lender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lender.swift; sourceTree = "<group>"; };
+		924448821B9AB4A400E16D6A /* Borrower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Borrower.swift; sourceTree = "<group>"; };
+		924448861B9AB62400E16D6A /* BankAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
+		9244488D1B9ABE7B00E16D6A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../Downloads/parse-library-1.8.2/Parse.framework"; sourceTree = "<group>"; };
+		9244488F1B9ABE9900E16D6A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Downloads/parse-library-1.8.2/Bolts.framework"; sourceTree = "<group>"; };
+		924448911B9ABF1900E16D6A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		924448931B9ABF2200E16D6A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		924448951B9ABF2E00E16D6A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		924448971B9ABFAF00E16D6A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		924448981B9ABFAF00E16D6A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		924448991B9ABFAF00E16D6A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		9244489A1B9ABFAF00E16D6A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9244489B1B9ABFAF00E16D6A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9244489C1B9ABFAF00E16D6A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		9244489D1B9ABFAF00E16D6A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		924448A51B9AC17700E16D6A /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		924448AE1B9ADD2B00E16D6A /* Loan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loan.swift; sourceTree = "<group>"; };
+		924448B01B9ADD5100E16D6A /* LoanRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanRequest.swift; sourceTree = "<group>"; };
+		924448B21B9ADF7D00E16D6A /* BorrowerReputation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorrowerReputation.swift; sourceTree = "<group>"; };
+		924448B41B9AE35E00E16D6A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		924448B61B9AE8F500E16D6A /* ClosedLoan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosedLoan.swift; sourceTree = "<group>"; };
 		AECEA0CD1B9AB1C00032696D /* MicroTrans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroTrans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECEA0D11B9AB1C00032696D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AECEA0D21B9AB1C00032696D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +89,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9244489E1B9ABFAF00E16D6A /* CoreLocation.framework in Frameworks */,
+				9244489F1B9ABFAF00E16D6A /* libsqlite3.dylib in Frameworks */,
+				924448A01B9ABFAF00E16D6A /* libz.dylib in Frameworks */,
+				924448A11B9ABFAF00E16D6A /* QuartzCore.framework in Frameworks */,
+				924448A21B9ABFAF00E16D6A /* Security.framework in Frameworks */,
+				924448A31B9ABFAF00E16D6A /* StoreKit.framework in Frameworks */,
+				924448A41B9ABFAF00E16D6A /* SystemConfiguration.framework in Frameworks */,
+				924448961B9ABF2E00E16D6A /* CoreGraphics.framework in Frameworks */,
+				924448941B9ABF2200E16D6A /* CFNetwork.framework in Frameworks */,
+				924448921B9ABF1900E16D6A /* AudioToolbox.framework in Frameworks */,
+				9244488E1B9ABE7B00E16D6A /* Parse.framework in Frameworks */,
+				924448901B9ABE9900E16D6A /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +114,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9244487B1B9AB45300E16D6A /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				924448851B9AB60B00E16D6A /* InformationTypes */,
+				9244487E1B9AB48D00E16D6A /* User.swift */,
+				924448801B9AB49B00E16D6A /* Lender.swift */,
+				924448821B9AB4A400E16D6A /* Borrower.swift */,
+			);
+			name = Users;
+			sourceTree = "<group>";
+		};
+		924448851B9AB60B00E16D6A /* InformationTypes */ = {
+			isa = PBXGroup;
+			children = (
+				924448861B9AB62400E16D6A /* BankAccount.swift */,
+				924448B01B9ADD5100E16D6A /* LoanRequest.swift */,
+				924448AE1B9ADD2B00E16D6A /* Loan.swift */,
+				924448B21B9ADF7D00E16D6A /* BorrowerReputation.swift */,
+				924448B61B9AE8F500E16D6A /* ClosedLoan.swift */,
+			);
+			name = InformationTypes;
+			sourceTree = "<group>";
+		};
+		9244488C1B9ABE5500E16D6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				924448971B9ABFAF00E16D6A /* CoreLocation.framework */,
+				924448981B9ABFAF00E16D6A /* libsqlite3.dylib */,
+				924448991B9ABFAF00E16D6A /* libz.dylib */,
+				9244489A1B9ABFAF00E16D6A /* QuartzCore.framework */,
+				9244489B1B9ABFAF00E16D6A /* Security.framework */,
+				9244489C1B9ABFAF00E16D6A /* StoreKit.framework */,
+				9244489D1B9ABFAF00E16D6A /* SystemConfiguration.framework */,
+				924448951B9ABF2E00E16D6A /* CoreGraphics.framework */,
+				924448931B9ABF2200E16D6A /* CFNetwork.framework */,
+				924448911B9ABF1900E16D6A /* AudioToolbox.framework */,
+				9244488F1B9ABE9900E16D6A /* Bolts.framework */,
+				9244488D1B9ABE7B00E16D6A /* Parse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AECEA0C41B9AB1C00032696D = {
 			isa = PBXGroup;
 			children = (
+				9244488C1B9ABE5500E16D6A /* Frameworks */,
 				AECEA0CF1B9AB1C00032696D /* MicroTrans */,
 				AECEA0E51B9AB1C00032696D /* MicroTransTests */,
 				AECEA0CE1B9AB1C00032696D /* Products */,
@@ -79,6 +178,9 @@
 		AECEA0CF1B9AB1C00032696D /* MicroTrans */ = {
 			isa = PBXGroup;
 			children = (
+				924448A51B9AC17700E16D6A /* DataManager.swift */,
+				924448B41B9AE35E00E16D6A /* Constants.swift */,
+				9244487B1B9AB45300E16D6A /* Users */,
 				AECEA0D21B9AB1C00032696D /* AppDelegate.swift */,
 				AECEA0D41B9AB1C00032696D /* ViewController.swift */,
 				AECEA0D61B9AB1C00032696D /* Main.storyboard */,
@@ -215,9 +317,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				AECEA0F31B9AC4400032696D /* SignUpViewController.swift in Sources */,
+=======
+				924448B11B9ADD5100E16D6A /* LoanRequest.swift in Sources */,
+				924448B51B9AE35E00E16D6A /* Constants.swift in Sources */,
+				924448831B9AB4A400E16D6A /* Borrower.swift in Sources */,
+				924448AF1B9ADD2B00E16D6A /* Loan.swift in Sources */,
+				924448871B9AB62400E16D6A /* BankAccount.swift in Sources */,
+>>>>>>> 99fd432c8e74e0612b60808e740f60d5ee7366bc
 				AECEA0D51B9AB1C00032696D /* ViewController.swift in Sources */,
+				924448A61B9AC17700E16D6A /* DataManager.swift in Sources */,
+				924448B71B9AE8F500E16D6A /* ClosedLoan.swift in Sources */,
+				924448811B9AB49B00E16D6A /* Lender.swift in Sources */,
 				AECEA0D31B9AB1C00032696D /* AppDelegate.swift in Sources */,
+				924448B31B9ADF7D00E16D6A /* BorrowerReputation.swift in Sources */,
+				9244487F1B9AB48D00E16D6A /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +461,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/kyleswartz/Downloads/parse-library-1.8.2",
+				);
 				INFOPLIST_FILE = MicroTrans/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -356,6 +475,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/kyleswartz/Downloads/parse-library-1.8.2",
+				);
 				INFOPLIST_FILE = MicroTrans/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -415,6 +538,7 @@
 				AECEA0EE1B9AB1C00032696D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AECEA0EF1B9AB1C00032696D /* Build configuration list for PBXNativeTarget "MicroTransTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +547,7 @@
 				AECEA0F11B9AB1C00032696D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
