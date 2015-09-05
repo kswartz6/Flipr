@@ -10,7 +10,7 @@ import Foundation
 import Parse
 import UIKit
 
-class User : PFUser {
+class FlipperUser : PFUser {
     
     /*
     * Variable declarations
@@ -19,11 +19,15 @@ class User : PFUser {
     * 2) pass
     * 3) email
     */
-    
-    var SSN:Int;
-    var homeAddres:String;
-    var phoneNumber:String;
-    var userImage:UIImage;
+    var reputation:Reputation
+    var loanRequests:LoanRequest
+    var activeLoan:Loan
+    var closedLoans:[Int: ClosedLoan]
+    var SSN:Int
+    var homeAddres:String
+    var phoneNumber:String
+    var userImage:UIImage
+    var isLender:Bool
     
 
     init(var userName:String, var password:String, var emailAddres:String,

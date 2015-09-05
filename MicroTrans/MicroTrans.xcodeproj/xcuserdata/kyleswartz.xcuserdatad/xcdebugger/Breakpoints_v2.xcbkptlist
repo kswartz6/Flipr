@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MicroTrans/User.swift"
+            filePath = "MicroTrans/FlipperUser.swift"
             timestampString = "463126702.686631"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "12"
             endingLineNumber = "12"
-            landmarkName = "User"
+            landmarkName = "FlipperUser"
             landmarkType = "3">
             <Locations>
                <Location
