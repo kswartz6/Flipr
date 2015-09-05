@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AECEA0D31B9AB1C00032696D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEA0D21B9AB1C00032696D /* AppDelegate.swift */; };
+		AECEA0D51B9AB1C00032696D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEA0D41B9AB1C00032696D /* ViewController.swift */; };
+		AECEA0D81B9AB1C00032696D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECEA0D61B9AB1C00032696D /* Main.storyboard */; };
+		AECEA0DA1B9AB1C00032696D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AECEA0D91B9AB1C00032696D /* Images.xcassets */; };
+		AECEA0DD1B9AB1C00032696D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AECEA0DB1B9AB1C00032696D /* LaunchScreen.xib */; };
+		AECEA0E91B9AB1C00032696D /* MicroTransTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEA0E81B9AB1C00032696D /* MicroTransTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AECEA0E31B9AB1C00032696D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AECEA0C51B9AB1C00032696D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AECEA0CC1B9AB1C00032696D;
+			remoteInfo = MicroTrans;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AECEA0CD1B9AB1C00032696D /* MicroTrans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroTrans.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AECEA0D11B9AB1C00032696D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AECEA0D21B9AB1C00032696D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AECEA0D41B9AB1C00032696D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AECEA0D71B9AB1C00032696D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AECEA0D91B9AB1C00032696D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AECEA0DC1B9AB1C00032696D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AECEA0E21B9AB1C00032696D /* MicroTransTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MicroTransTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AECEA0E71B9AB1C00032696D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AECEA0E81B9AB1C00032696D /* MicroTransTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroTransTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AECEA0CA1B9AB1C00032696D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECEA0DF1B9AB1C00032696D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AECEA0C41B9AB1C00032696D = {
+			isa = PBXGroup;
+			children = (
+				AECEA0CF1B9AB1C00032696D /* MicroTrans */,
+				AECEA0E51B9AB1C00032696D /* MicroTransTests */,
+				AECEA0CE1B9AB1C00032696D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AECEA0CE1B9AB1C00032696D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AECEA0CD1B9AB1C00032696D /* MicroTrans.app */,
+				AECEA0E21B9AB1C00032696D /* MicroTransTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AECEA0CF1B9AB1C00032696D /* MicroTrans */ = {
+			isa = PBXGroup;
+			children = (
+				AECEA0D21B9AB1C00032696D /* AppDelegate.swift */,
+				AECEA0D41B9AB1C00032696D /* ViewController.swift */,
+				AECEA0D61B9AB1C00032696D /* Main.storyboard */,
+				AECEA0D91B9AB1C00032696D /* Images.xcassets */,
+				AECEA0DB1B9AB1C00032696D /* LaunchScreen.xib */,
+				AECEA0D01B9AB1C00032696D /* Supporting Files */,
+			);
+			path = MicroTrans;
+			sourceTree = "<group>";
+		};
+		AECEA0D01B9AB1C00032696D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AECEA0D11B9AB1C00032696D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AECEA0E51B9AB1C00032696D /* MicroTransTests */ = {
+			isa = PBXGroup;
+			children = (
+				AECEA0E81B9AB1C00032696D /* MicroTransTests.swift */,
+				AECEA0E61B9AB1C00032696D /* Supporting Files */,
+			);
+			path = MicroTransTests;
+			sourceTree = "<group>";
+		};
+		AECEA0E61B9AB1C00032696D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AECEA0E71B9AB1C00032696D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AECEA0CC1B9AB1C00032696D /* MicroTrans */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AECEA0EC1B9AB1C00032696D /* Build configuration list for PBXNativeTarget "MicroTrans" */;
+			buildPhases = (
+				AECEA0C91B9AB1C00032696D /* Sources */,
+				AECEA0CA1B9AB1C00032696D /* Frameworks */,
+				AECEA0CB1B9AB1C00032696D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MicroTrans;
+			productName = MicroTrans;
+			productReference = AECEA0CD1B9AB1C00032696D /* MicroTrans.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AECEA0E11B9AB1C00032696D /* MicroTransTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AECEA0EF1B9AB1C00032696D /* Build configuration list for PBXNativeTarget "MicroTransTests" */;
+			buildPhases = (
+				AECEA0DE1B9AB1C00032696D /* Sources */,
+				AECEA0DF1B9AB1C00032696D /* Frameworks */,
+				AECEA0E01B9AB1C00032696D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AECEA0E41B9AB1C00032696D /* PBXTargetDependency */,
+			);
+			name = MicroTransTests;
+			productName = MicroTransTests;
+			productReference = AECEA0E21B9AB1C00032696D /* MicroTransTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AECEA0C51B9AB1C00032696D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Emil Shirima";
+				TargetAttributes = {
+					AECEA0CC1B9AB1C00032696D = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					AECEA0E11B9AB1C00032696D = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = AECEA0CC1B9AB1C00032696D;
+					};
+				};
+			};
+			buildConfigurationList = AECEA0C81B9AB1C00032696D /* Build configuration list for PBXProject "MicroTrans" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AECEA0C41B9AB1C00032696D;
+			productRefGroup = AECEA0CE1B9AB1C00032696D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AECEA0CC1B9AB1C00032696D /* MicroTrans */,
+				AECEA0E11B9AB1C00032696D /* MicroTransTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AECEA0CB1B9AB1C00032696D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECEA0D81B9AB1C00032696D /* Main.storyboard in Resources */,
+				AECEA0DD1B9AB1C00032696D /* LaunchScreen.xib in Resources */,
+				AECEA0DA1B9AB1C00032696D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECEA0E01B9AB1C00032696D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AECEA0C91B9AB1C00032696D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECEA0D51B9AB1C00032696D /* ViewController.swift in Sources */,
+				AECEA0D31B9AB1C00032696D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECEA0DE1B9AB1C00032696D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECEA0E91B9AB1C00032696D /* MicroTransTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AECEA0E41B9AB1C00032696D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AECEA0CC1B9AB1C00032696D /* MicroTrans */;
+			targetProxy = AECEA0E31B9AB1C00032696D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AECEA0D61B9AB1C00032696D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AECEA0D71B9AB1C00032696D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AECEA0DB1B9AB1C00032696D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AECEA0DC1B9AB1C00032696D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AECEA0EA1B9AB1C00032696D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AECEA0EB1B9AB1C00032696D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AECEA0ED1B9AB1C00032696D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MicroTrans/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AECEA0EE1B9AB1C00032696D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MicroTrans/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AECEA0F01B9AB1C00032696D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MicroTransTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MicroTrans.app/MicroTrans";
+			};
+			name = Debug;
+		};
+		AECEA0F11B9AB1C00032696D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MicroTransTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MicroTrans.app/MicroTrans";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AECEA0C81B9AB1C00032696D /* Build configuration list for PBXProject "MicroTrans" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECEA0EA1B9AB1C00032696D /* Debug */,
+				AECEA0EB1B9AB1C00032696D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AECEA0EC1B9AB1C00032696D /* Build configuration list for PBXNativeTarget "MicroTrans" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECEA0ED1B9AB1C00032696D /* Debug */,
+				AECEA0EE1B9AB1C00032696D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AECEA0EF1B9AB1C00032696D /* Build configuration list for PBXNativeTarget "MicroTransTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECEA0F01B9AB1C00032696D /* Debug */,
+				AECEA0F11B9AB1C00032696D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AECEA0C51B9AB1C00032696D /* Project object */;
+}

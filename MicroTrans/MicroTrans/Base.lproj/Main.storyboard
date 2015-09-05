@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pZ4-BR-hTT">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Micro Trans-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MicroTrans" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1YZ-rl-aWQ">
+                                <rect key="frame" x="252" y="117" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ulq-hs-Xgc">
+                                <rect key="frame" x="252" y="169" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJS-x8-OiE">
+                                <rect key="frame" x="268" y="236" width="55" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WM-Ae-eS5">
+                                <rect key="frame" x="268" y="285" width="55" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ulq-hs-Xgc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="236" id="1lR-nP-hWA"/>
+                            <constraint firstItem="ulq-hs-Xgc" firstAttribute="top" secondItem="1YZ-rl-aWQ" secondAttribute="bottom" constant="22" id="3AT-UI-Mv2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ulq-hs-Xgc" secondAttribute="trailing" constant="235" id="4I5-OV-JUE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iJS-x8-OiE" secondAttribute="trailing" constant="261" id="6n4-Fk-uyw"/>
+                            <constraint firstItem="8WM-Ae-eS5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="252" id="A3P-lP-x8b"/>
+                            <constraint firstItem="iJS-x8-OiE" firstAttribute="top" secondItem="ulq-hs-Xgc" secondAttribute="bottom" constant="37" id="C7Y-08-IQm"/>
+                            <constraint firstItem="8WM-Ae-eS5" firstAttribute="top" secondItem="iJS-x8-OiE" secondAttribute="bottom" constant="19" id="ItB-DO-ima"/>
+                            <constraint firstItem="iJS-x8-OiE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="252" id="PHw-bQ-8tq"/>
+                            <constraint firstItem="1YZ-rl-aWQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="53" id="UY7-FV-xkB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1YZ-rl-aWQ" secondAttribute="trailing" constant="235" id="dfs-xr-q4B"/>
+                            <constraint firstItem="1YZ-rl-aWQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="236" id="oFy-NG-gHx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8WM-Ae-eS5" secondAttribute="trailing" constant="261" id="sao-U1-8qc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Micro Trans" id="zti-7d-dKd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1309" y="78"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Pn6-We-FO4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pZ4-BR-hTT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="750-Oo-c9j">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="MJb-Kh-ZL1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EIH-AJ-YMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="532" y="78"/>
+        </scene>
+    </scenes>
+</document>
