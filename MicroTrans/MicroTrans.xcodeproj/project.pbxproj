@@ -13,6 +13,7 @@
 		AECEA0DA1B9AB1C00032696D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AECEA0D91B9AB1C00032696D /* Images.xcassets */; };
 		AECEA0DD1B9AB1C00032696D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AECEA0DB1B9AB1C00032696D /* LaunchScreen.xib */; };
 		AECEA0E91B9AB1C00032696D /* MicroTransTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEA0E81B9AB1C00032696D /* MicroTransTests.swift */; };
+		AECEA0F31B9AC4400032696D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEA0F21B9AC4400032696D /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		AECEA0E21B9AB1C00032696D /* MicroTransTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MicroTransTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECEA0E71B9AB1C00032696D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AECEA0E81B9AB1C00032696D /* MicroTransTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroTransTests.swift; sourceTree = "<group>"; };
+		AECEA0F21B9AC4400032696D /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				AECEA0D21B9AB1C00032696D /* AppDelegate.swift */,
 				AECEA0D41B9AB1C00032696D /* ViewController.swift */,
 				AECEA0D61B9AB1C00032696D /* Main.storyboard */,
+				AECEA0F21B9AC4400032696D /* SignUpViewController.swift */,
 				AECEA0D91B9AB1C00032696D /* Images.xcassets */,
 				AECEA0DB1B9AB1C00032696D /* LaunchScreen.xib */,
 				AECEA0D01B9AB1C00032696D /* Supporting Files */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AECEA0F31B9AC4400032696D /* SignUpViewController.swift in Sources */,
 				AECEA0D51B9AB1C00032696D /* ViewController.swift in Sources */,
 				AECEA0D31B9AB1C00032696D /* AppDelegate.swift in Sources */,
 			);
