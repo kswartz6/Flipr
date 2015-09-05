@@ -16,4 +16,22 @@ import Parse
 
 class DataManager {
     init(){}
+    
+    static func registerNewUser(var newUser:User) {
+        if (newUser is Lender){
+            
+        }
+        else if(newUser is Borrower) {
+            
+        }
+        else {
+            // Not good
+        }
+    }
+    
+    static func retrieveUser(var userName:String, var pass:String) {
+        
+    }
+    
+    
 }
