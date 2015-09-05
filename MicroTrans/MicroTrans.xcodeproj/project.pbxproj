@@ -318,14 +318,20 @@
 			buildActionMask = 2147483647;
 			files = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 				AECEA0F31B9AC4400032696D /* SignUpViewController.swift in Sources */,
 =======
+=======
+>>>>>>> origin/master
 				924448B11B9ADD5100E16D6A /* LoanRequest.swift in Sources */,
 				924448B51B9AE35E00E16D6A /* Constants.swift in Sources */,
 				924448831B9AB4A400E16D6A /* Borrower.swift in Sources */,
 				924448AF1B9ADD2B00E16D6A /* Loan.swift in Sources */,
 				924448871B9AB62400E16D6A /* BankAccount.swift in Sources */,
+<<<<<<< HEAD
 >>>>>>> 99fd432c8e74e0612b60808e740f60d5ee7366bc
+=======
+>>>>>>> origin/master
 				AECEA0D51B9AB1C00032696D /* ViewController.swift in Sources */,
 				924448A61B9AC17700E16D6A /* DataManager.swift in Sources */,
 				924448B71B9AE8F500E16D6A /* ClosedLoan.swift in Sources */,
