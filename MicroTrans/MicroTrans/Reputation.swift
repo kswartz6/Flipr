@@ -8,7 +8,7 @@
 //
 //import Foundation
 //
-//class BorrowerReputation {
+//class Reputation {
 //    var currentReputation:Double
 //    
 //    init(){}

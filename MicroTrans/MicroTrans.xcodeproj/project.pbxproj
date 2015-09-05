@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9244487F1B9AB48D00E16D6A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9244487E1B9AB48D00E16D6A /* User.swift */; };
-		924448811B9AB49B00E16D6A /* Lender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448801B9AB49B00E16D6A /* Lender.swift */; };
-		924448831B9AB4A400E16D6A /* Borrower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448821B9AB4A400E16D6A /* Borrower.swift */; };
+		9244487F1B9AB48D00E16D6A /* FlipperUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9244487E1B9AB48D00E16D6A /* FlipperUser.swift */; };
 		924448871B9AB62400E16D6A /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448861B9AB62400E16D6A /* BankAccount.swift */; };
 		9244488E1B9ABE7B00E16D6A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9244488D1B9ABE7B00E16D6A /* Parse.framework */; };
 		924448901B9ABE9900E16D6A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9244488F1B9ABE9900E16D6A /* Bolts.framework */; };
@@ -26,7 +24,7 @@
 		924448A61B9AC17700E16D6A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448A51B9AC17700E16D6A /* DataManager.swift */; };
 		924448AF1B9ADD2B00E16D6A /* Loan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448AE1B9ADD2B00E16D6A /* Loan.swift */; };
 		924448B11B9ADD5100E16D6A /* LoanRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448B01B9ADD5100E16D6A /* LoanRequest.swift */; };
-		924448B31B9ADF7D00E16D6A /* BorrowerReputation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448B21B9ADF7D00E16D6A /* BorrowerReputation.swift */; };
+		924448B31B9ADF7D00E16D6A /* Reputation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448B21B9ADF7D00E16D6A /* Reputation.swift */; };
 		924448B51B9AE35E00E16D6A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448B41B9AE35E00E16D6A /* Constants.swift */; };
 		924448B71B9AE8F500E16D6A /* ClosedLoan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448B61B9AE8F500E16D6A /* ClosedLoan.swift */; };
 		AECEA0D31B9AB1C00032696D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEA0D21B9AB1C00032696D /* AppDelegate.swift */; };
@@ -49,9 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9244487E1B9AB48D00E16D6A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		924448801B9AB49B00E16D6A /* Lender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lender.swift; sourceTree = "<group>"; };
-		924448821B9AB4A400E16D6A /* Borrower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Borrower.swift; sourceTree = "<group>"; };
+		9244487E1B9AB48D00E16D6A /* FlipperUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipperUser.swift; sourceTree = "<group>"; };
 		924448861B9AB62400E16D6A /* BankAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
 		9244488D1B9ABE7B00E16D6A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../Downloads/parse-library-1.8.2/Parse.framework"; sourceTree = "<group>"; };
 		9244488F1B9ABE9900E16D6A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Downloads/parse-library-1.8.2/Bolts.framework"; sourceTree = "<group>"; };
@@ -68,7 +64,7 @@
 		924448A51B9AC17700E16D6A /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		924448AE1B9ADD2B00E16D6A /* Loan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loan.swift; sourceTree = "<group>"; };
 		924448B01B9ADD5100E16D6A /* LoanRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanRequest.swift; sourceTree = "<group>"; };
-		924448B21B9ADF7D00E16D6A /* BorrowerReputation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorrowerReputation.swift; sourceTree = "<group>"; };
+		924448B21B9ADF7D00E16D6A /* Reputation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reputation.swift; sourceTree = "<group>"; };
 		924448B41B9AE35E00E16D6A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		924448B61B9AE8F500E16D6A /* ClosedLoan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosedLoan.swift; sourceTree = "<group>"; };
 		AECEA0CD1B9AB1C00032696D /* MicroTrans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroTrans.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,9 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				924448851B9AB60B00E16D6A /* InformationTypes */,
-				9244487E1B9AB48D00E16D6A /* User.swift */,
-				924448801B9AB49B00E16D6A /* Lender.swift */,
-				924448821B9AB4A400E16D6A /* Borrower.swift */,
+				9244487E1B9AB48D00E16D6A /* FlipperUser.swift */,
 			);
 			name = Users;
 			sourceTree = "<group>";
@@ -131,7 +125,7 @@
 				924448861B9AB62400E16D6A /* BankAccount.swift */,
 				924448B01B9ADD5100E16D6A /* LoanRequest.swift */,
 				924448AE1B9ADD2B00E16D6A /* Loan.swift */,
-				924448B21B9ADF7D00E16D6A /* BorrowerReputation.swift */,
+				924448B21B9ADF7D00E16D6A /* Reputation.swift */,
 				924448B61B9AE8F500E16D6A /* ClosedLoan.swift */,
 			);
 			name = InformationTypes;
@@ -320,16 +314,14 @@
 				AECEA0F31B9AC4400032696D /* SignUpViewController.swift in Sources */,
 				924448B11B9ADD5100E16D6A /* LoanRequest.swift in Sources */,
 				924448B51B9AE35E00E16D6A /* Constants.swift in Sources */,
-				924448831B9AB4A400E16D6A /* Borrower.swift in Sources */,
 				924448AF1B9ADD2B00E16D6A /* Loan.swift in Sources */,
 				924448871B9AB62400E16D6A /* BankAccount.swift in Sources */,
 				AECEA0D51B9AB1C00032696D /* ViewController.swift in Sources */,
 				924448A61B9AC17700E16D6A /* DataManager.swift in Sources */,
 				924448B71B9AE8F500E16D6A /* ClosedLoan.swift in Sources */,
-				924448811B9AB49B00E16D6A /* Lender.swift in Sources */,
 				AECEA0D31B9AB1C00032696D /* AppDelegate.swift in Sources */,
-				924448B31B9ADF7D00E16D6A /* BorrowerReputation.swift in Sources */,
-				9244487F1B9AB48D00E16D6A /* User.swift in Sources */,
+				924448B31B9ADF7D00E16D6A /* Reputation.swift in Sources */,
+				9244487F1B9AB48D00E16D6A /* FlipperUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
