@@ -10,7 +10,7 @@ import Foundation
 import Parse
 import UIKit
 
-class FlipperUser : PFUser {
+class FlipprUser : PFUser {
     
     /*
     * Variable declarations

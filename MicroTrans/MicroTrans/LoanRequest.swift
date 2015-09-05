@@ -12,9 +12,9 @@ class LoanRequest {
     
     var cashRequested:Double
     var interestRate:Double
-    var borrowerInformation:FlipperUser
+    var borrowerInformation:FlipprUser
     
-    init(var cashReq:Double, var borrower:FlipperUser){
+    init(var cashReq:Double, var borrower:FlipprUser){
         borrowerInformation = borrower
         cashRequested = cashReq
         interestRate = Double()
