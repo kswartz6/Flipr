@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pZ4-BR-hTT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pZ4-BR-hTT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -455,6 +455,7 @@
                     <navigationItem key="navigationItem" title="Sign Up" id="v4N-Yc-hw5">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="qNe-nj-vq4">
                             <connections>
+                                <action selector="nextBtnAction:" destination="rdM-sb-FbJ" id="phP-US-2BV"/>
                                 <segue destination="hrs-6Y-VaR" kind="show" id="iEJ-yf-VMx"/>
                             </connections>
                         </barButtonItem>
@@ -615,10 +616,18 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Bank Details" id="1qH-cK-geJ">
-                        <barButtonItem key="rightBarButtonItem" title="Submit" id="8IN-QP-BnI"/>
+                        <barButtonItem key="rightBarButtonItem" title="Submit" id="8IN-QP-BnI">
+                            <connections>
+                                <action selector="submitBtnAction:" destination="hrs-6Y-VaR" id="VDG-dO-aNB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="accountNumberTextField" destination="MQf-r6-0ot" id="Id4-oT-vWf"/>
+                        <outlet property="bankNameTextField" destination="qCf-Zq-GZk" id="oAw-mq-mHc"/>
                         <outlet property="isLenderSwitch" destination="WoK-Qa-OtJ" id="YDg-Uf-az6"/>
+                        <outlet property="mailingAddress" destination="uYB-QE-g1i" id="4d4-dL-DMU"/>
+                        <outlet property="routingNumberTextField" destination="9tP-mk-AsV" id="Jmh-XT-tFG"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7m3-Od-MW2" userLabel="First Responder" sceneMemberID="firstResponder"/>

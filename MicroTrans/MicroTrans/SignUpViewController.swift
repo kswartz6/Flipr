@@ -19,7 +19,10 @@ class SignUpViewController: UITableViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confrimPasswordTextField: UITextField!
     @IBOutlet weak var usernameTextField: UITextField!
-    
+    @IBOutlet weak var bankNameTextField: UITextField!
+    @IBOutlet weak var accountNumberTextField: UITextField!
+    @IBOutlet weak var routingNumberTextField: UITextField!
+    @IBOutlet weak var mailingAddress: UITextField!
     @IBOutlet weak var isLenderSwitch: UISwitch!
     
     override func viewDidLoad() {
@@ -39,6 +42,14 @@ class SignUpViewController: UITableViewController {
         return 80
     }
     
+    // TODO: Perform checks to see if the textfields are empty or not
+    @IBAction func nextBtnAction(sender: AnyObject) {
+    }
+    
+    // TODO: Perform checks to see if the bank details are empty or not
+    // TODO: Send the typed data to Parse
+    @IBAction func submitBtnAction(sender: AnyObject) {
+    }
 //    @IBAction func nextBtnAction(sender: AnyObject) {
 //        
 //        dismissKeyboard()
