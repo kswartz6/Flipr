@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="LBQ-y3-cA6">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="LBQ-y3-cA6">
                                 <rect key="frame" x="0.0" y="-120" width="608" height="762"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" background="BG" translatesAutoresizingMaskIntoConstraints="NO" id="qsg-Tx-Kq2">
@@ -326,6 +326,7 @@
                         <outlet property="lastNameTextField" destination="1s8-XD-vr5" id="aNp-VD-y2E"/>
                         <outlet property="passwordTextField" destination="td8-4O-OL9" id="VFQ-IW-lHa"/>
                         <outlet property="phoneNumberTextField" destination="D5A-DZ-bVo" id="S1b-e5-Kg5"/>
+                        <outlet property="tableView" destination="ilq-oG-NEf" id="h2n-Et-bCx"/>
                         <outlet property="usernameTextField" destination="9YQ-3h-Bev" id="m1Z-sT-EDH"/>
                     </connections>
                 </tableViewController>

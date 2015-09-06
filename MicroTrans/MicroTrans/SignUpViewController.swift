@@ -10,7 +10,6 @@ import UIKit
 import Parse
 
 class SignUpViewController: UITableViewController {
-
     
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
@@ -24,12 +23,18 @@ class SignUpViewController: UITableViewController {
     @IBOutlet weak var routingNumberTextField: UITextField!
     @IBOutlet weak var mailingAddress: UITextField!
     @IBOutlet weak var isLenderSwitch: UISwitch!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationController?.setNavigationBarHidden(false, animated:true)
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+        
+        //  Background Styling created by Christopher Jones
+        
+        var imageFile : UIImageView = UIImageView(image: UIImage(named: "BG2.png"))
+        
+        self.tableView.backgroundView = imageFile
 
         // Do any additional setup after loading the view.
     }
@@ -40,6 +45,17 @@ class SignUpViewController: UITableViewController {
     }
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 80
+    }
+    
+    //    - (void)tableView:(UITableView *)tableView
+    //    willDisplayCell:(UITableViewCell *)cell
+    //    forRowAtIndexPath:(NSIndexPath *)indexPath
+    //    { [cell setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]]­];
+    //
+    //    }
+    
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        cell.backgroundView = UIImageView(image: UIImage(named: "BG2.png"))
     }
     
     // TODO: Perform checks to see if the textfields are empty or not
@@ -59,6 +75,15 @@ class SignUpViewController: UITableViewController {
     // TODO: Send the typed data to Parse
     @IBAction func submitBtnAction(sender: AnyObject) {
     }
+    
+    
+//    var background: UITableView Background: UIView = UIView(frame: self.tableView.bounds)
+//    background.backgroundColor = UIColor.colorWithPatternImage(UIImage.imageNamed("bg2.png"))
+//    self.tableView.backgroundView = background
+
+    //  End Code
+    
+    
 //    @IBAction func nextBtnAction(sender: AnyObject) {
 //        
 //        dismissKeyboard()
