@@ -44,6 +44,15 @@ class SignUpViewController: UITableViewController {
     
     // TODO: Perform checks to see if the textfields are empty or not
     @IBAction func nextBtnAction(sender: AnyObject) {
+        // Check the input fields to make sure they weren't left blank
+        // if they were send an alert, so they know to fill them out
+        // before they can proceed to the next step in the process
+        if(firstNameTextField.text == "") {
+            var alert = UIAlertController(title: "Alert", message: "First Name needs filled out", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+            return
+        }
     }
     
     // TODO: Perform checks to see if the bank details are empty or not

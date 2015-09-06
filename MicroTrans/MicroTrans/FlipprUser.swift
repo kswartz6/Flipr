@@ -19,6 +19,8 @@ class FlipprUser : PFUser {
     * 2) pass
     * 3) email
     */
+    var firstName:String
+    var lastName:String
     var reputation:Reputation
     var loanRequests:LoanRequest
     var loans:[Loan]
@@ -32,7 +34,7 @@ class FlipprUser : PFUser {
 
     init(var userName:String, var password:String, var emailAddres:String,
         var social:String, var address:String, var phone:String, var photo:UIImage, var rep:Reputation,
-        var loanReq:LoanRequest, var loanz:[Loan], var lender:Bool, var bankinfo:BankAccount){
+        var loanReq:LoanRequest, var loanz:[Loan], var lender:Bool, var bankinfo:BankAccount, var first:String, var last:String){
         SSN = String()
         homeAddres = address
         phoneNumber = phone
@@ -42,6 +44,8 @@ class FlipprUser : PFUser {
         loans = loanz
         bankInformation = bankinfo
         isLender = lender
+        firstName = first
+        lastName = last
         super.init()
     }
     
