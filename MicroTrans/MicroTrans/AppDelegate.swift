@@ -15,26 +15,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    func gotoMain () {
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewControllerWithIdentifier("Main") as! UIViewController
-        
-        self.window?.rootViewController = vc
-        
-        NSNotificationCenter.defaultCenter().removeObserver(self, name: "gotoMain", object: self)
-    }
-    
-    func gotoLogin () {
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewControllerWithIdentifier("loginViewController") as! UIViewController
-        
-        self.window?.rootViewController = vc
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("gotoMain"), name: "gotoMain", object: nil)
-        
-    }
+//    func gotoMain () {
+//        
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewControllerWithIdentifier("Main") as! UIViewController
+//        
+//        self.window?.rootViewController = vc
+//        
+//        NSNotificationCenter.defaultCenter().removeObserver(self, name: "gotoMain", object: self)
+//    }
+//    
+//    func gotoLogin () {
+//        
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewControllerWithIdentifier("loginViewController") as! UIViewController
+//        
+//        self.window?.rootViewController = vc
+//        
+//        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("gotoMain"), name: "gotoMain", object: nil)
+//        
+//    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         Parse.enableLocalDatastore()
@@ -62,13 +62,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            gotoLogin()
 //        }
         
-        if let currentUser = PFUser.currentUser()
-        {
-                gotoMain()
-        }else
-        {
-            gotoLogin()
-        }
+//        if let currentUser = PFUser.currentUser()
+//        {
+//                gotoMain()
+//        }else
+//        {
+//            gotoLogin()
+//        }
         
         return true
     }
