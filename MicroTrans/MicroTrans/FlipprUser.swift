@@ -10,7 +10,7 @@ import Foundation
 import Parse
 import UIKit
 
-class FlipprUser : PFUser {
+class FlipprUser : PFUser, PFSubclassing {
     
     /*
     * Variable declarations
@@ -19,17 +19,17 @@ class FlipprUser : PFUser {
     * 2) pass
     * 3) email
     */
-    var firstName:String
-    var lastName:String
-    var reputation:Reputation
-    var loanRequests:LoanRequest
-    var loans:[Loan]
-    var bankInformation:BankAccount
-    var SSN:String
-    var homeAddres:String
-    var phoneNumber:String
-    var userImage:UIImage
-    var isLender:Bool
+    @NSManaged var firstName:String!
+    @NSManaged var lastName:String
+    @NSManaged var reputation:Reputation
+    @NSManaged var loanRequests:LoanRequest
+    @NSManaged var loans:[Loan]
+    @NSManaged var bankInformation:BankAccount
+    @NSManaged var SSN:String
+    @NSManaged var homeAddres:String
+    @NSManaged var phoneNumber:String
+    @NSManaged var userImage:UIImage
+    @NSManaged var isLender:Bool
     
 
     init(var userName:String, var password:String, var emailAddres:String,

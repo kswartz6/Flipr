@@ -7,12 +7,26 @@
 
 
 import Foundation
+import Parse
 
-class Reputation {
-    var currentReputation:Double
+class Reputation : PFObject, PFSubclassing {
     
-    init(var rep:Double){
-        currentReputation = rep
+    @NSManaged var currentReputationScore:Double
+    
+    override init(){
+        super.init()
+    }
+    
+    static func parseClassName() -> String {
+        return "Reputation"
+    }
+    
+    override class func initialize() {
+        var onceToken : dispatch_once_t = 0;
+        dispatch_once(&onceToken) {
+            // inform Parse about this subclass
+            self.registerSubclass()
+        }
     }
     
     

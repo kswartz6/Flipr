@@ -8,20 +8,28 @@
 
 import Foundation
 import UIKit
+import Parse
 
-class BankAccount {
+class BankAccount : PFObject, PFSubclassing {
     
-    var institutionName:String
-    var accountNumber:String
-    var routingNumber:String
+    static func parseClassName() -> String {
+        return "BankAccount"
+    }
+    
+    @NSManaged var InstitutionName:String!
+    @NSManaged var AccountNumber:String!
+    @NSManaged var RoutingNumber:String!
     //var checkImage:UIImage
     
-
-    // default constructor
-    init(var name:String, var accNumber:String, var routingNum:String, var check:UIImage) {
-        institutionName = name
-        accountNumber = accNumber
-        routingNumber = routingNum
-        //checkImage = check
+    override init() {
+        super.init()
+    }
+    
+    override class func initialize() {
+        var onceToken : dispatch_once_t = 0;
+        dispatch_once(&onceToken) {
+            // inform Parse about this subclass
+            self.registerSubclass()
+        }
     }
 }

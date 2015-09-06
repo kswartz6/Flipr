@@ -39,6 +39,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         Parse.enableLocalDatastore()
         
+        FlipprUser.registerSubclass()
+        BankAccount.registerSubclass()
+        LoanRequest.registerSubclass()
+        Loan.registerSubclass()
+        Reputation.registerSubclass()
+        
         // Initialize Parse.
         Parse.setApplicationId("Kvbnfpf0Dc7iBhwiPpkdbl4Gvl8Swwhoe5ySpMCc",
             clientKey: "hop34Bl0cJGJCr8aB3dm2H21ouLAyNywgbOFaq4u")
