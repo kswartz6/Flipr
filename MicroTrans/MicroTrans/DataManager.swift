@@ -16,7 +16,7 @@ import Parse
 
 class DataManager: NSObject {
     
-    static func registerNewUser(var username:String, var password:String, var email:String, var newUser:FlipprUser, var isLender:Bool) {
+    static func registerNewUser(var username:String, var password:String, var email:String, var institutionName:String, var routingNumber:String, var SSN:String, var homeAddress:String, var phoneNumber:String, var accountNumber:String , var isLender:Bool, var firstName:String, var lastName:String) {
         
         // Start building the PFObject for the FlipperUser
         var userToBuild = PFObject(className: "User")
@@ -28,27 +28,30 @@ class DataManager: NSObject {
         userToBuild["email"] = email
         
         // Build the BankAccount JSON
-        accountInfo["InstitutionName"] = newUser.bankInformation.InstitutionName
-        accountInfo["RoutingNumber"] = newUser.bankInformation.RoutingNumber
-        accountInfo["AccountNumber"] = newUser.bankInformation.AccountNumber
-        userToBuild["AccountInformation"] = accountInfo
+        accountInfo["institutionName"] = institutionName
+        accountInfo["routingNumber"] = routingNumber
+        accountInfo["accountNumber"] = accountNumber
+        userToBuild["accountInformation"] = accountInfo
         
         // Now copy over all of the primitives from FlipperUser
-        userToBuild["SSN"] = newUser.SSN
-        userToBuild["homeAddress"] = newUser.homeAddres
-        userToBuild["phoneNumber"] = newUser.phoneNumber
-        userToBuild["isLender"] = newUser.isLender
-        userToBuild["image"] = newUser.userImage
+        userToBuild["SSN"] = SSN
+        userToBuild["homeAddress"] = homeAddress
+        userToBuild["phoneNumber"] = phoneNumber
+        userToBuild["isLender"] = isLender
+//        userToBuild["image"] = userImage
         
         // Now we will finish up by building and adding Reputation and 
         var reputation = PFObject(className: "Reputation")
-        reputation["CurrentReputationScore"] = newUser.reputation.currentReputationScore
+//        reputation["CurrentReputationScore"] = newUser.reputation.currentReputationScore
         userToBuild["Reputation"] = reputation
+        userToBuild["firstName"] = firstName
+        userToBuild["lastName"] = lastName
         
         // Now send it all off to Parse
         userToBuild.saveInBackgroundWithBlock {
             (success: Bool, error: NSError?) -> Void in
             if (success) {
+                print("New user successfully saved")
                 // The object has been saved.
             } else {
                 // We will want to warn the user
