@@ -32,21 +32,20 @@ class FlipprUser : PFUser, PFSubclassing {
     @NSManaged var isLender:Bool
     
 
-    init(var userName:String, var password:String, var emailAddres:String,
-        var social:String, var address:String, var phone:String, var photo:UIImage, var rep:Reputation,
-        var loanReq:LoanRequest, var loanz:[Loan], var lender:Bool, var bankinfo:BankAccount, var first:String, var last:String){
-        SSN = String()
-        homeAddres = address
-        phoneNumber = phone
-        userImage = photo
-        reputation = rep
-        loanRequests = loanReq
-        loans = loanz
-        bankInformation = bankinfo
-        isLender = lender
-        firstName = first
-        lastName = last
+    override init(){
         super.init()
+    }
+    
+    static override func parseClassName() -> String {
+        return "User"
+    }
+    
+    override class func initialize() {
+        var onceToken : dispatch_once_t = 0;
+        dispatch_once(&onceToken) {
+            // inform Parse about this subclass
+            self.registerSubclass()
+        }
     }
     
     func canBorrow() -> Bool {
