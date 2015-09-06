@@ -7,17 +7,29 @@
 
 
 import Foundation
+import Parse
 
-class LoanRequest {
-    var cashRequested:Double
-    var interestRate:Double
-    var borrowerInformation:FlipprUser
+class LoanRequest : PFObject, PFSubclassing {
     
-    init(var cashReq:Double, var borrower:FlipprUser){
-        borrowerInformation = borrower
-        cashRequested = cashReq
-        interestRate = Double()
-        interestRate = calculateInterestRate()
+    @NSManaged var CashRequested:Double
+    @NSManaged var interestRate:Double
+    @NSManaged var borrower:FlipprUser!
+    @NSManaged var hasBeenAccepted:Bool
+    
+    static func parseClassName() -> String {
+        return "LoanRequest"
+    }
+    
+    override init(){
+     super.init()
+    }
+    
+    override class func initialize() {
+        var onceToken : dispatch_once_t = 0;
+        dispatch_once(&onceToken) {
+            // inform Parse about this subclass
+            self.registerSubclass()
+        }
     }
     
     // Need to implement an equation to calculate the interest rate dependent on the borrowers reputation

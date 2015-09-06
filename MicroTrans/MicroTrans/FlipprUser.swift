@@ -10,7 +10,7 @@ import Foundation
 import Parse
 import UIKit
 
-class FlipprUser : PFUser {
+class FlipprUser : PFUser, PFSubclassing {
     
     /*
     * Variable declarations
@@ -19,30 +19,37 @@ class FlipprUser : PFUser {
     * 2) pass
     * 3) email
     */
-    var reputation:Reputation
-    var loanRequests:LoanRequest
-    var loans:[Loan]
-    var bankInformation:BankAccount
-    var SSN:String
-    var homeAddres:String
-    var phoneNumber:String
-    var userImage:UIImage
-    var isLender:Bool
+    // Capital One API Requirements
+    @NSManaged var capitalOneID:String
+    @NSManaged var homeAddres:String
+    @NSManaged var firstName:String!
+    @NSManaged var lastName:String
+    
+    @NSManaged var reputation:Reputation
+    @NSManaged var loanRequests:LoanRequest
+    @NSManaged var loans:[Loan]
+    @NSManaged var bankInformation:BankAccount
+    @NSManaged var SSN:String
+    
+    @NSManaged var phoneNumber:String
+    @NSManaged var userImage:UIImage
+    @NSManaged var isLender:Bool
     
 
-    init(var userName:String, var password:String, var emailAddres:String,
-        var social:String, var address:String, var phone:String, var photo:UIImage, var rep:Reputation,
-        var loanReq:LoanRequest, var loanz:[Loan], var lender:Bool, var bankinfo:BankAccount){
-        SSN = String()
-        homeAddres = address
-        phoneNumber = phone
-        userImage = photo
-        reputation = rep
-        loanRequests = loanReq
-        loans = loanz
-        bankInformation = bankinfo
-        isLender = lender
+    override init(){
         super.init()
+    }
+    
+    static override func parseClassName() -> String {
+        return "User"
+    }
+    
+    override class func initialize() {
+        var onceToken : dispatch_once_t = 0;
+        dispatch_once(&onceToken) {
+            // inform Parse about this subclass
+            self.registerSubclass()
+        }
     }
     
     func canBorrow() -> Bool {

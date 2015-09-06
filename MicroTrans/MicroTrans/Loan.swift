@@ -6,40 +6,61 @@
 //  Copyright (c) 2015 Emil Shirima. All rights reserved.
 //
 
+// NESSIE API KEY
+// e3fc6eb8d7ad8c2e8c30bce35ef6c8a0
+// Capital 1 URL
+// api.reimaginebanking.com/customers?key=e3fc6eb8d7ad8c2e8c30bce35ef6c8a0
+
 import Foundation
+import Parse
 import UIKit
 
-class Loan {
-    var amountOwed:Double
-    var totalAmountOfLoan:Double
-    var amountPayedBack:Double
-    var interestRate:Double
-    //var digitalSignatureFromBorrower:UIImage
-    var borrower:FlipprUser
-    var lender:FlipprUser
-    var interestCollected:Double
-    var isClosed:Bool
+class Loan : PFObject, PFSubclassing {
     
-    init(var loanTotal:Double, var amountPayed:Double, var interest:Double, var borrow:FlipprUser, var lend:FlipprUser, var closed:Bool){
+    @NSManaged var totalAmountOfLoan:Double
+    @NSManaged var amountCurrentlyPayed:Double
+    @NSManaged var interestRate:Double
+    //var digitalSignatureFromBorrower:UIImage
+    @NSManaged var borrower:FlipprUser
+    @NSManaged var lender:FlipprUser
+    @NSManaged var isClosed:Bool
+
+    
+    var amountOwed:Double
+    var interestCollected:Double
+    
+    override init(){
         amountOwed = Double()
-        amountPayedBack = amountPayed
-        totalAmountOfLoan = loanTotal
-        interestRate = interest
-        borrower = borrow
-        lender = lend
-        isClosed = closed
         interestCollected = Double()
-        interestCollected = amountOwed * interestRate
-        evaluateAmountOwed()
+        super.init()
+    }
+    
+    static func parseClassName() -> String {
+        return "Loan"
+    }
+    
+    override class func initialize() {
+        var onceToken : dispatch_once_t = 0;
+        dispatch_once(&onceToken) {
+            // inform Parse about this subclass
+            self.registerSubclass()
+        }
     }
     
     func evaluateAmountOwed() {
-        amountOwed = totalAmountOfLoan - amountPayedBack
+        amountOwed = totalAmountOfLoan - amountCurrentlyPayed
+    }
+    
+    func makeTransfer(var amountOfMoneyToTransfer:Double) -> Bool {
+        // Hook up some money transfer API to actually transfer money from borrower to lender and
+        // then update within our DB and reflect into the app
+        
+        return true;
     }
     
     func payOnLoan(var amountToPay:Double) -> Bool {
         if(amountOwed >= amountToPay) {
-            amountPayedBack += amountToPay;
+            amountCurrentlyPayed += amountToPay;
             evaluateAmountOwed()
             return true
         }
