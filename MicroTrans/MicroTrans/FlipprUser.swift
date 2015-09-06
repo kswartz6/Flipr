@@ -20,10 +20,12 @@ class FlipprUser : PFUser, PFSubclassing {
     * 3) email
     */
     // Capital One API Requirements
-    @NSManaged var capitalOneID:String
-    @NSManaged var homeAddres:String
+    @NSManaged var capitalOneID:String?
+    @NSManaged var homeAddres:String?
     @NSManaged var firstName:String!
-    @NSManaged var lastName:String
+    @NSManaged var lastName:String?
+    
+    @NSManaged var creditScore:Double
     
     @NSManaged var reputation:Reputation
     @NSManaged var loanRequests:LoanRequest
@@ -41,7 +43,7 @@ class FlipprUser : PFUser, PFSubclassing {
     }
     
     static override func parseClassName() -> String {
-        return "User"
+        return "_User"
     }
     
     override class func initialize() {

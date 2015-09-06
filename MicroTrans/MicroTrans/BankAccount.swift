@@ -19,6 +19,7 @@ class BankAccount : PFObject, PFSubclassing {
     @NSManaged var InstitutionName:String!
     @NSManaged var AccountNumber:String!
     @NSManaged var RoutingNumber:String!
+    @NSManaged var accountBalance:Double
     //var checkImage:UIImage
     
     override init() {
