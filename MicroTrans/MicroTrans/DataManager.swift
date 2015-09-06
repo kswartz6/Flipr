@@ -56,6 +56,35 @@ class DataManager: NSObject {
         }
     }
     
+    static func getAvailableLoanRequests() -> [LoanRequest] {
+        
+        var arr:[LoanRequest] = [LoanRequest]()
+        var query = PFQuery(className:"LoanRequest")
+        query.whereKey("hasBeenAccepted", equalTo:false)
+        query.findObjectsInBackgroundWithBlock {
+            (objects: [AnyObject]?, error: NSError?) -> Void in
+            
+            if error == nil {
+                // The find succeeded.
+                println("Successfully retrieved \(objects!.count) scores.")
+                // Do something with the found objects
+                
+                if let objects = objects as? [LoanRequest] {
+                    for object in objects {
+                        arr.append(object)
+                    }
+//                    return arr
+                }
+                
+            } else {
+                // Log details of the failure
+                println("Error: \(error!) \(error!.userInfo!)")
+                return
+            }
+    }
+        return arr
+    }
+    
 //    static func retrieveUser(var userName:String, var pass:String) -> FlipprUser
 //    {
 //        var query = PFQuery(className:"User")
