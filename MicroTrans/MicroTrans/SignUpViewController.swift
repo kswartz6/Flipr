@@ -23,6 +23,7 @@ class SignUpViewController: UITableViewController {
     @IBOutlet weak var accountNumberTextField: UITextField!
     @IBOutlet weak var routingNumberTextField: UITextField!
     @IBOutlet weak var mailingAddress: UITextField!
+    
     @IBOutlet weak var isLenderSwitch: UISwitch!
     
     override func viewDidLoad() {
