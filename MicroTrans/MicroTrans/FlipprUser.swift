@@ -19,14 +19,18 @@ class FlipprUser : PFUser, PFSubclassing {
     * 2) pass
     * 3) email
     */
+    // Capital One API Requirements
+    @NSManaged var capitalOneID:String
+    @NSManaged var homeAddres:String
     @NSManaged var firstName:String!
     @NSManaged var lastName:String
+    
     @NSManaged var reputation:Reputation
     @NSManaged var loanRequests:LoanRequest
     @NSManaged var loans:[Loan]
     @NSManaged var bankInformation:BankAccount
     @NSManaged var SSN:String
-    @NSManaged var homeAddres:String
+    
     @NSManaged var phoneNumber:String
     @NSManaged var userImage:UIImage
     @NSManaged var isLender:Bool

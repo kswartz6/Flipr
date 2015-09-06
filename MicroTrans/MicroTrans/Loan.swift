@@ -6,6 +6,11 @@
 //  Copyright (c) 2015 Emil Shirima. All rights reserved.
 //
 
+// NESSIE API KEY
+// e3fc6eb8d7ad8c2e8c30bce35ef6c8a0
+// Capital 1 URL
+// api.reimaginebanking.com/customers?key=e3fc6eb8d7ad8c2e8c30bce35ef6c8a0
+
 import Foundation
 import Parse
 import UIKit
@@ -44,6 +49,13 @@ class Loan : PFObject, PFSubclassing {
     
     func evaluateAmountOwed() {
         amountOwed = totalAmountOfLoan - amountCurrentlyPayed
+    }
+    
+    func makeTransfer(var amountOfMoneyToTransfer:Double) -> Bool {
+        // Hook up some money transfer API to actually transfer money from borrower to lender and
+        // then update within our DB and reflect into the app
+        
+        return true;
     }
     
     func payOnLoan(var amountToPay:Double) -> Bool {
