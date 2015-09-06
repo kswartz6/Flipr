@@ -24,12 +24,9 @@
 		924448B11B9ADD5100E16D6A /* LoanRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448B01B9ADD5100E16D6A /* LoanRequest.swift */; };
 		924448B31B9ADF7D00E16D6A /* Reputation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448B21B9ADF7D00E16D6A /* Reputation.swift */; };
 		924448B51B9AE35E00E16D6A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924448B41B9AE35E00E16D6A /* Constants.swift */; };
-<<<<<<< HEAD
 		92D3498B1B9C090200207192 /* CapitalOneHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D3498A1B9C090200207192 /* CapitalOneHandler.swift */; };
-=======
 		AE298CAB1B9C19560052D3F9 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE298CAA1B9C19560052D3F9 /* PageViewController.swift */; };
 		AE298CAD1B9C1A9F0052D3F9 /* LenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE298CAC1B9C1A9F0052D3F9 /* LenderViewController.swift */; };
->>>>>>> 792d94de7af11b067573d1bc1d922365f5888845
 		AECEA0D31B9AB1C00032696D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEA0D21B9AB1C00032696D /* AppDelegate.swift */; };
 		AECEA0D51B9AB1C00032696D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEA0D41B9AB1C00032696D /* ViewController.swift */; };
 		AECEA0D81B9AB1C00032696D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECEA0D61B9AB1C00032696D /* Main.storyboard */; };
