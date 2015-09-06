@@ -55,7 +55,7 @@ class SignUpViewController: UITableViewController {
     //    }
     
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        cell.backgroundView = UIImageView(image: UIImage(named: "BG2.png"))
+        cell.backgroundView = UIImageView(image: UIImage(named: "BG3.png"))
     }
     
     // TODO: Perform checks to see if the textfields are empty or not
