@@ -48,13 +48,6 @@ class SignUpViewController: UITableViewController {
         return 80
     }
     
-    //    - (void)tableView:(UITableView *)tableView
-    //    willDisplayCell:(UITableViewCell *)cell
-    //    forRowAtIndexPath:(NSIndexPath *)indexPath
-    //    { [cell setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]]­];
-    //
-    //    }
-    
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         cell.backgroundView = UIImageView(image: UIImage(named: "BG3.png"))
     }
