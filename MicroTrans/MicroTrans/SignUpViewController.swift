@@ -23,7 +23,16 @@ class SignUpViewController: UITableViewController {
     @IBOutlet weak var routingNumberTextField: UITextField!
     @IBOutlet weak var mailingAddress: UITextField!
     
-    @IBOutlet weak var isLenderSwitch: UISwitch!
+    var fName:String = String()
+    var lName:String = String()
+    var PNumber:String = String()
+    var eMail:String = String()
+    var pWord:String = String()
+    var cPWord:String = String()
+    var uName:String = String()
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,7 +66,15 @@ class SignUpViewController: UITableViewController {
         // Check the input fields to make sure they weren't left blank
         // if they were send an alert, so they know to fill them out
         // before they can proceed to the next step in the process
-        if(firstNameTextField.text == "") {
+        
+        fName  = firstNameTextField.text
+        lName = lastNameTextField.text
+        PNumber = phoneNumberTextField.text
+        eMail = emailAddressTextField.text
+        pWord = passwordTextField.text
+        uName = usernameTextField.text
+        
+        if(firstNameTextField.text.isEmpty) {
             var alert = UIAlertController(title: "Alert", message: "First Name needs filled out", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
@@ -68,6 +85,8 @@ class SignUpViewController: UITableViewController {
     // TODO: Perform checks to see if the bank details are empty or not
     // TODO: Send the typed data to Parse
     @IBAction func submitBtnAction(sender: AnyObject) {
+        
+        DataManager.registerNewUser(uName, password: pWord, email: eMail, institutionName: bankNameTextField.text, routingNumber: routingNumberTextField.text, SSN: "9999999", homeAddress: mailingAddress.text, phoneNumber: PNumber, accountNumber: accountNumberTextField.text, isLender: false, firstName: fName, lastName: lName)
     }
     
     

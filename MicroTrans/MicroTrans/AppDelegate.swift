@@ -52,12 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // [Optional] Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         // Override point for customization after application launch.
-        let url = NSURL(string: "http://api.reimaginebanking.com/atms?key=e3fc6eb8d7ad8c2e8c30bce35ef6c8a0")
-        let task = NSURLSession.sharedSession().dataTaskWithURL(url!){
-            (data, response, error) in
-            println(NSString(data: data, encoding: NSUTF8StringEncoding))
-        }
-        task.resume()
+
 //        if PFUser.currentUser() == nil {
 //            gotoLogin()
 //        }
