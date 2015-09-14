@@ -1,1 +1,1 @@
-# PennApps_MicroTrans
+# Flipr - Micro-loan Marketplace - Repo
