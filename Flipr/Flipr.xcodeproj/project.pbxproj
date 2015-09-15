@@ -13,6 +13,7 @@
 		920EF3E91BA7792200597D33 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 920EF3E81BA7792200597D33 /* Images.xcassets */; };
 		920EF3EC1BA7792200597D33 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 920EF3EA1BA7792200597D33 /* LaunchScreen.xib */; };
 		920EF3F81BA7792200597D33 /* FliprTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EF3F71BA7792200597D33 /* FliprTests.swift */; };
+		BA267400C3AF132789EDA1AC /* libPods-Flipr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B621886BA563FB26E7AD044A /* libPods-Flipr.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		363D9272C369446F152EE14B /* Pods-Flipr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flipr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flipr/Pods-Flipr.debug.xcconfig"; sourceTree = "<group>"; };
+		8701532541BB9090F77C0C7B /* Pods-Flipr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flipr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flipr/Pods-Flipr.release.xcconfig"; sourceTree = "<group>"; };
 		920EF3DC1BA7792200597D33 /* Flipr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flipr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		920EF3E01BA7792200597D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		920EF3E11BA7792200597D33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		920EF3F11BA7792200597D33 /* FliprTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FliprTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		920EF3F61BA7792200597D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		920EF3F71BA7792200597D33 /* FliprTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FliprTests.swift; sourceTree = "<group>"; };
+		B621886BA563FB26E7AD044A /* libPods-Flipr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Flipr.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA267400C3AF132789EDA1AC /* libPods-Flipr.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		517DD3B32A3019D17FCECBFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B621886BA563FB26E7AD044A /* libPods-Flipr.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		920EF3D31BA7792200597D33 = {
 			isa = PBXGroup;
 			children = (
 				920EF3DE1BA7792200597D33 /* Flipr */,
 				920EF3F41BA7792200597D33 /* FliprTests */,
 				920EF3DD1BA7792200597D33 /* Products */,
+				F0165645462C895061B2A955 /* Pods */,
+				517DD3B32A3019D17FCECBFB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +127,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F0165645462C895061B2A955 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				363D9272C369446F152EE14B /* Pods-Flipr.debug.xcconfig */,
+				8701532541BB9090F77C0C7B /* Pods-Flipr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 920EF3FB1BA7792200597D33 /* Build configuration list for PBXNativeTarget "Flipr" */;
 			buildPhases = (
+				53CBE02FFF7D5BC35DCA8CBB /* Check Pods Manifest.lock */,
 				920EF3D81BA7792200597D33 /* Sources */,
 				920EF3D91BA7792200597D33 /* Frameworks */,
 				920EF3DA1BA7792200597D33 /* Resources */,
+				E01699D7350CC61218A443BC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,6 +232,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53CBE02FFF7D5BC35DCA8CBB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E01699D7350CC61218A443BC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flipr/Pods-Flipr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		920EF3D81BA7792200597D33 /* Sources */ = {
@@ -340,6 +399,7 @@
 		};
 		920EF3FC1BA7792200597D33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 363D9272C369446F152EE14B /* Pods-Flipr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Flipr/Info.plist;
@@ -350,6 +410,7 @@
 		};
 		920EF3FD1BA7792200597D33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8701532541BB9090F77C0C7B /* Pods-Flipr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Flipr/Info.plist;
@@ -411,6 +472,7 @@
 				920EF3FD1BA7792200597D33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		920EF3FE1BA7792200597D33 /* Build configuration list for PBXNativeTarget "FliprTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +481,7 @@
 				920EF4001BA7792200597D33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
